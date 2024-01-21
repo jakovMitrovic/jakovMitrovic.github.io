@@ -291,15 +291,15 @@ img{
 
 
 @media screen and (max-width: 768px){
-    
+    .item:hover {
+        transform: scale(1.1) !important;
+    }
     
     .slika_kategorije{
         width: 300px;
     }
     
-    .masonry{
-        overflow: hidden !important
-    }
+    
     .nav__menu{
         position: fixed;
         top: 550%;
@@ -638,6 +638,8 @@ img{
         margin: 0;
     }
 
+    
+
     .noM{
         
         text-align: start;
@@ -731,6 +733,10 @@ img{
         margin-left: auto;
         margin-right: auto;
     }
+    .item:hover{
+        transform: scale(1.4);
+        box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.399), 0 40px 180px 0 rgba(0, 0, 0, 0.445);
+    }
 }
 
 
@@ -809,6 +815,8 @@ img{
         -webkit-column-count: 4;
         column-count: 4;
     }
+
+   
 }
 
 .category__title{
@@ -816,7 +824,3 @@ img{
     margin-top: 7em;
 }
 
-.item:hover{
-    transform: scale(1.4);
-    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.399), 0 40px 180px 0 rgba(0, 0, 0, 0.445);
-}

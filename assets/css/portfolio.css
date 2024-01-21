@@ -242,16 +242,14 @@ img{
 
 }
 
-.item{
-    overflow: hidden;
-    
-}
+
 
 .item img :hover{
     transition: 200ms;
     transform: scale(1.05);
     
 }
+
 
 .bd-grid2{
     /* max-width: 1024px; */
@@ -293,11 +291,15 @@ img{
 
 
 @media screen and (max-width: 768px){
-
+    
+    
     .slika_kategorije{
         width: 300px;
     }
-
+    
+    .masonry{
+        overflow: hidden !important
+    }
     .nav__menu{
         position: fixed;
         top: 550%;
@@ -309,10 +311,11 @@ img{
         border-radius: 10px;;
         transition: .6s;
         backdrop-filter: blur(15px);
-       
+        
     }
-
-
+    
+    
+    
 }
 
 #nav-menu{

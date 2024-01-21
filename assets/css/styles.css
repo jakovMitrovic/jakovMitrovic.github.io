@@ -294,6 +294,10 @@ img{
 
 @media screen and (max-width: 768px){
 
+
+    .home__title{
+        margin-top: -20% !important;
+    }
     .slika_kategorije{
         width: 100%;
         border-radius: 10px 10px 0 0;

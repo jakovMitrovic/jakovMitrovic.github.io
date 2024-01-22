@@ -64,7 +64,7 @@
     font-size: 50px;
 }
 .category__title p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: large;
     font-weight: 600;
     color: #535353cb !important;
@@ -94,10 +94,10 @@
 
 
 p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 span{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 
 /*===== BASE =====*/
@@ -618,10 +618,12 @@ img{
 }
 .footer__link{
     padding: .25rem 0;
+    font-family: 'Varela Round', sans-serif;
+    
     color: var(--text-color-light) !important;
 }
 .footer__link:hover{
-    color: var(--first-color);
+    color: white !important;
 }
 .footer__social{
     font-size: 1.4rem;
@@ -629,7 +631,7 @@ img{
     color: var(--text-color-light) !important;
 }
 .footer__social:hover{
-    color: var(--first-color);
+    color: white !important;
 }
 
 /* ===== MEDIA QUERIES =====*/

@@ -39,10 +39,12 @@
 }
 
 p{
-    font-family: 'Open Sans', sans-serif;
+    
+    font-family: 'Varela Round', sans-serif;
 }
 span{
-    font-family: 'Open Sans', sans-serif;
+    
+    font-family: 'Varela Round', sans-serif;
 }
 
 @media screen and (min-width: 1600px){
@@ -174,9 +176,10 @@ img{
     text-align: start !important;
     padding-right: 1em;
     padding-left: 1em;
-   
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(48, 48, 48, 0.64);
+
+    font-family: 'Varela Round', sans-serif;
+    color: rgba(67, 67, 67, 0.848);
+    
     font-size: 20px;
     font-weight: bold;
     
@@ -328,6 +331,10 @@ img{
         padding-left: 1em;
         padding-right: 1em;
         padding-bottom: 1em;
+    }
+
+    .footer__container{
+        text-align: center;
     }
 
 }
@@ -520,9 +527,9 @@ img{
     width: 100%;
 }
 .about__subtitle{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     margin-bottom: var(--mb-1);
-    color: rgba(48, 48, 48, 0.848);
+    color: rgba(28, 28, 28, 0.848);
     
 }
 .about__subtitle span{
@@ -532,8 +539,8 @@ img{
 
 .noM{
     margin-bottom: 0.5em !important;
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(38, 38, 38, 0.764);
+    font-family: 'Varela Round', sans-serif;
+    color: rgba(28, 28, 28, 0.848);
     font-size: 20px;
     font-weight: bold;
     padding-top: 1rem;
@@ -543,9 +550,10 @@ img{
 .about__profession{
     display: block;
     margin-bottom: var(--mb-4);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    color: rgba(28, 28, 28, 0.848);
     
-    color: rgba(48, 48, 48, 0.848);
+    
     
     font-weight: bold;
 }
@@ -641,16 +649,18 @@ img{
     row-gap: 2rem;
 }
 .footer__title{
-    font-size: var(--normal-font-size);
+    font-size: large;
     color: var(--text-color-light);
     margin-bottom: var(--mb-2);
 }
 .footer__link{
     padding: .25rem 0;
+    font-family: 'Varela Round', sans-serif;
+    
     color: var(--text-color-light) !important;
 }
 .footer__link:hover{
-    color: var(--first-color);
+    color: white !important;
 }
 .footer__social{
     font-size: 1.4rem;
@@ -658,7 +668,7 @@ img{
     color: var(--text-color-light) !important;
 }
 .footer__social:hover{
-    color: var(--first-color);
+    color: white !important;
 }
 
 /* ===== MEDIA QUERIES =====*/

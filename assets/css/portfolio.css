@@ -298,7 +298,14 @@ img{
     .slika_kategorije{
         width: 300px;
     }
+    .contact__container{
+        text-align: center;
+    }
     
+    .footer__container{
+        text-align: center;
+    }
+
     
     .nav__menu{
         position: fixed;

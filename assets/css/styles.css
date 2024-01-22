@@ -297,7 +297,9 @@ img{
 
 @media screen and (max-width: 768px){
 
-
+    .contact__container{
+        text-align: center;
+    }
     .home__title{
         margin-top: -20% !important;
     }
@@ -762,6 +764,7 @@ img{
     .contact__container{
         /*grid-template-columns: repeat(2, 1fr);*/
         justify-items: center;
+        text-align: center;
     }
     .contact__form{
         width: 380px;

@@ -64,7 +64,7 @@
     font-size: 50px;
 }
 .category__title p{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: large;
     font-weight: 600;
     color: #535353cb !important;
@@ -680,6 +680,7 @@ img{
     }
     .nav__link{
         color: var(--white-color);
+        font-size: larger;
     }
     .nav__link:hover{
         color: var(--white-color);

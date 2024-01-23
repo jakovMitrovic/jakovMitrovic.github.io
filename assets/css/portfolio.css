@@ -34,8 +34,6 @@
         --small-font-size: .875rem;
     }
 
-    
-    
 }
 
 
@@ -246,6 +244,7 @@ img{
 
 .item img :hover{
     transition: 200ms;
+    
     transform: scale(1.05);
     
 }
@@ -293,6 +292,7 @@ img{
 @media screen and (max-width: 768px){
     .item:hover {
         transform: scale(1.1) !important;
+        /* position: relative; */
     }
     
     .slika_kategorije{

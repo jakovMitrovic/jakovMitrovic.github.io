@@ -406,10 +406,7 @@ img{
 /*===== HOME =====*/
 .home{ 
     position: relative;
-    background-image: url("../img/banner/banner-4.jpg");
-    background-image: url("../img/banner/banner-3.jpg");
-    background-image: url("../img/banner/banner-2.jpg");
-    background-image: url("../img/banner/banner-1.jpg");
+    background-image: url("../img/banner/banner-1.webp");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -420,43 +417,43 @@ img{
 
 @keyframes bgChange{
     0%{
-        background-image: url("../img/banner/banner-1.jpg");
+        background-image: url("../img/banner/banner-1.webp");
         
     }
     10%{
-        background-image: url("../img/banner/banner-1.jpg");
+        background-image: url("../img/banner/banner-1.webp");
         
     }
     20%{
-        background-image: url("../img/banner/banner-2.jpg");
+        background-image: url("../img/banner/banner-2.webp");
         
     }
     30%{
-        background-image: url("../img/banner/banner-2.jpg");
+        background-image: url("../img/banner/banner-2.webp");
         
     }
     40%{
-        background-image: url("../img/banner/banner-3.jpg");
+        background-image: url("../img/banner/banner-3.webp");
         
     }
     50%{
-        background-image: url("../img/banner/banner-3.jpg");
+        background-image: url("../img/banner/banner-3.webp");
        
     }
     60%{
-        background-image: url("../img/banner/banner-4.jpg");
+        background-image: url("../img/banner/banner-4.webp");
         
     }
     70%{
-        background-image: url("../img/banner/banner-4.jpg");
+        background-image: url("../img/banner/banner-4.webp");
         
     }
     80%{
-        background-image: url("../img/banner/banner-5.jpg");
+        background-image: url("../img/banner/banner-5.webp");
         
     }
     90%{
-        background-image: url("../img/banner/banner-5.jpg");
+        background-image: url("../img/banner/banner-5.webp");
         
     }
 }

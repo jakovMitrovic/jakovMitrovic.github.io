@@ -294,6 +294,14 @@ img{
         transform: scale(1.1) !important;
         /* position: relative; */
     }
+
+    .category__title h1{
+        margin-bottom: 0.5em;
+    }
+    .category__title p{
+      
+        font-size: medium;
+    }
     
     .slika_kategorije{
         width: 300px;

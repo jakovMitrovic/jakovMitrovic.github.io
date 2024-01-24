@@ -66,8 +66,8 @@ sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
 
 /*SCROLL PORTFOLIO*/
-sr.reveal('.right', {origin:'right', distance: '40px', interval: 50})
-sr.reveal('.left', {origin:'left', distance: '40px', interval: 50})
+sr.reveal('.right', {origin:'right', distance: '10px', interval: 50})
+sr.reveal('.left', {origin:'left', distance: '10px', interval: 50})
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__subtitle', {})

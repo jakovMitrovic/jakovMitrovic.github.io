@@ -42,12 +42,15 @@ const sections = document.querySelectorAll('section[id]')
 // }
 
 /*===== SCROLL REVEAL ANIMATION =====*/
+
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 1000,
     reset: true
 })
+
 
 /*SCROLL HOME*/
 sr.reveal('.home__title', {})
@@ -63,13 +66,17 @@ sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
 
 /*SCROLL PORTFOLIO*/
-//sr.reveal('.portfolio__img', {interval: 200})
+sr.reveal('.right', {origin:'right', distance: '40px', interval: 50})
+sr.reveal('.left', {origin:'left', distance: '40px', interval: 50})
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
+
+sr.reveal('.masonry', {origin: 'bottom', interval: 200})
+
 
 
 

@@ -1,13 +1,13 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 
-/*===== VARIABLES CSS =====*/
+
 :root{
     --header-height: 3rem;
     --font-medium: 500;
 }
 
-/*===== Colores =====*/
+
 :root{
     --first-color: #ddddddb1;
     --white-color: #252424;
@@ -17,7 +17,7 @@
     --text-color-light: #ffffffc9;
 }
 
-/*===== Fuente y tipografia =====*/
+
 :root{
     --body-font: 'Montserrat', sans-serif;
    
@@ -77,7 +77,7 @@
     margin-bottom: 5em;
 }
 
-/*===== Margenes =====*/
+
 :root{
     --mb-1: .5rem;
     --mb-2: 1rem;
@@ -85,7 +85,6 @@
     --mb-4: 2rem;
 }
 
-/*===== z index =====*/
 :root{
     --z-fixed: 100;
 }
@@ -98,7 +97,6 @@ span{
     font-family: 'Varela Round', sans-serif;
 }
 
-/*===== BASE =====*/
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -134,7 +132,7 @@ img{
     display: inline-block;
 }
 
-/*===== CLASS CSS ===== */
+
 .section{
     padding: 3rem 0;
 }
@@ -161,8 +159,6 @@ img{
     
 }
 
-
-
 .slika_kategorije{
     width: 500px;
     margin: 0 !important;
@@ -188,8 +184,6 @@ img{
     
 }
 
-
-
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
@@ -209,7 +203,6 @@ img{
     background-color: var(--white-color);
 }
 
-/*===== LAYOUT =====*/
 .bd-grid{
     max-width: 1024px;
     display: grid;
@@ -241,7 +234,6 @@ img{
 }
 
 
-
 .item img :hover{
     transition: 200ms;
     
@@ -251,9 +243,9 @@ img{
 
 
 .bd-grid2{
-    /* max-width: 1024px; */
+
     display: flex;
-    
+
     align-content: center;
     align-items: center;
     
@@ -279,7 +271,7 @@ img{
     
 }
 
-/*===== NAV =====*/
+
 .nav{
     height: var(--header-height);
     display: flex;
@@ -292,7 +284,7 @@ img{
 @media screen and (max-width: 768px){
     .item:hover {
         transform: scale(1.1) !important;
-        /* position: relative; */
+ 
     }
 
     .category__title h1{
@@ -330,7 +322,6 @@ img{
     }
     
     
-    
 }
 
 #nav-menu{
@@ -365,15 +356,14 @@ img{
     cursor: pointer;
 }
 
-/*=== Show menu ===*/
+
 .show{
     right: 0;
-    
         
 }
 
 
-/*Active menu*/
+
 .active::after{
     position: absolute;
     content: "";
@@ -385,9 +375,6 @@ img{
 }
 
 
-    
-
-/*===== HOME =====*/
 .home{ 
     position: relative;
     background-image: url("../img/banner/banner-4.jpg");
@@ -445,7 +432,6 @@ img{
     background-color: rgba(0,0,0,0.3);
 }
 
-
 .home__container{
     height: calc(100vh - var(--header-height));
     row-gap: 5rem;
@@ -482,7 +468,6 @@ img{
     width: 295px;
 }
 
-/* ===== ABOUT =====*/
 
 #about{
     background-color: var(--first-color);
@@ -557,14 +542,10 @@ img{
     color: var(--first-color);
 }
 
-/* ===== PORTFOLIO =====*/
 .portfolio{
     background-color: var(--dark-color);
 }
-/* .portfolio__container{
-    justify-items: center;
-    row-gap: 3rem;
-} */
+
 .portfolio__img{
     
     position: relative;
@@ -575,7 +556,6 @@ img{
     border-radius: .4rem;
 }
 
-/* ===== CONTACT =====*/
 #contact{
     background-color: var(--first-color);
 }
@@ -618,7 +598,7 @@ img{
     cursor: pointer;
 }
 
-/* ===== FOOTER=====*/
+
 .footer{
     background-color: var(--dark-color);
     color: var(--text-color-light) !important;
@@ -649,13 +629,10 @@ img{
     color: white !important;
 }
 
-/* ===== MEDIA QUERIES =====*/
 @media screen and (min-width: 768px){
     body{
         margin: 0;
     }
-
-    
 
     .noM{
         
@@ -726,14 +703,8 @@ img{
         align-items: center;
     }
 
-    /* .portfolio__container{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 2rem;
-    } */
 
     .contact__container{
-        /*grid-template-columns: repeat(2, 1fr);*/
         justify-items: center;
     }
     .contact__form{
@@ -783,8 +754,7 @@ img{
 
 .item {
     display: inline-block;
-    /* background: #fff; */
-    /* box-shadow: 2px 2px 4px 0 #ccc; */
+
     padding: 0;
     margin: 0 0 1.5em;
     width: 100%;

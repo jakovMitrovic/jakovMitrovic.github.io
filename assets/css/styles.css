@@ -81,6 +81,10 @@ span {
     overflow: hidden !important;
 }
 
+.img__container {
+    overflow: hidden !important;
+}
+
 .kategorija img {
     transition: 0.5s all ease-in-out;
 
@@ -143,7 +147,7 @@ img {
     display: inline-block;
 }
 
-/*===== CLASS CSS ===== */
+
 .section {
     padding: 3rem 0;
 }
@@ -167,10 +171,7 @@ img {
     padding: 0 !important;
     border-radius: 10px;
 
-
 }
-
-
 
 .slika_kategorije {
     width: 500px;
@@ -178,6 +179,10 @@ img {
     padding: 0 !important;
     border-radius: 10px 0 0 10px;
     box-shadow: 5px 0 5px -2px #888888bb;
+}
+
+.opis {
+    z-index: 9 !important;
 }
 
 .opis p {
@@ -200,10 +205,7 @@ img {
 
     text-align: center;
 
-
 }
-
-
 
 .section-title {
     position: relative;
@@ -271,7 +273,7 @@ img {
 
 
 .bd-grid2 {
-    /* max-width: 1024px; */
+
     display: flex;
 
     align-content: center;
@@ -299,7 +301,7 @@ img {
 
 }
 
-/*===== NAV =====*/
+
 .nav {
     height: var(--header-height);
     display: flex;
@@ -317,7 +319,7 @@ img {
 
     .home__title {
         font-size: 5vh !important;
-        margin-top: 60vh !important;   
+        margin-top: 60vh !important;
     }
 
     .slika_kategorije {
@@ -335,12 +337,12 @@ img {
 
     .noM {
         font-size: 18px !important;
-        
+
     }
 
     .detalji {
         text-align: center !important;
-        
+
     }
 
     .nav__menu {
@@ -410,7 +412,7 @@ img {
     cursor: pointer;
 }
 
-/*=== Show menu ===*/
+
 .show {
     right: 0;
 
@@ -418,7 +420,7 @@ img {
 }
 
 
-/*Active menu*/
+
 .active::after {
     position: absolute;
     content: "";
@@ -432,7 +434,6 @@ img {
 
 
 
-/*===== HOME =====*/
 .home {
     position: relative;
     background-image: url("../img/banner/banner-1.webp");
@@ -549,7 +550,6 @@ img {
     width: 295px;
 }
 
-/* ===== ABOUT =====*/
 
 #about {
     background-color: var(--first-color);
@@ -639,15 +639,12 @@ img {
     color: white;
 }
 
-/* ===== PORTFOLIO =====*/
+
 .portfolio {
     background-color: var(--dark-color);
 }
 
-/* .portfolio__container{
-    justify-items: center;
-    row-gap: 3rem;
-} */
+
 .portfolio__img {
 
     position: relative;
@@ -659,7 +656,7 @@ img {
     border-radius: .4rem;
 }
 
-/* ===== CONTACT =====*/
+
 #contact {
     background-color: var(--first-color);
 }
@@ -707,7 +704,7 @@ img {
     cursor: pointer;
 }
 
-/* ===== FOOTER=====*/
+
 .footer {
     background-color: var(--dark-color);
     color: var(--text-color-light) !important;
@@ -743,7 +740,7 @@ img {
     color: white !important;
 }
 
-/* ===== MEDIA QUERIES =====*/
+
 @media screen and (min-width: 768px) {
     body {
         margin: 0;
@@ -768,7 +765,7 @@ img {
     }
 
     .kategorija:hover img {
-        transform: translate(1.4rem, 0ex) scale(1.1);
+        transform: scale(1.1);
 
     }
 
@@ -797,7 +794,7 @@ img {
     .nav__link {
         color: var(--white-color);
         font-size: larger;
-        
+
     }
 
     .nav__link:hover {
@@ -840,14 +837,7 @@ img {
         align-items: center;
     }
 
-    /* .portfolio__container{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 2rem;
-    } */
-
     .contact__container {
-        /*grid-template-columns: repeat(2, 1fr);*/
         justify-items: center;
         text-align: center;
     }

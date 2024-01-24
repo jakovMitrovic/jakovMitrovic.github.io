@@ -160,7 +160,7 @@ img {
 
 .kategorija {
 
-    margin-top: 5em;
+    margin-top: 2em;
     font-display: flex;
     background-color: var(--first-color);
 
@@ -316,7 +316,8 @@ img {
     }
 
     .home__title {
-        margin-top: -20% !important;
+        font-size: 5vh !important;
+        margin-top: 60vh !important;   
     }
 
     .slika_kategorije {
@@ -333,7 +334,7 @@ img {
 
 
     .noM {
-        font-size: 20px !important;
+        font-size: 18px !important;
         
     }
 
@@ -512,14 +513,13 @@ img {
 
 .home__title {
     align-self: center;
-    font-size: var(--big-font-size);
+    font-size: 5vw;
     color: rgb(255, 255, 255);
-
-    line-height: .8;
+    line-height: 1;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30rem;
+    margin-top: 25vh;
     text-align: center;
 
 
@@ -725,8 +725,7 @@ img {
 
 .footer__link {
     padding: .25rem 0;
-    font-family: 'Permanent Marker', cursive;
-
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-color-light) !important;
 }
 

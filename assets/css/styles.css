@@ -351,13 +351,13 @@ img {
 
 @media screen and (max-width: 768px) {
 
-    .home {
+    /* .home {
         background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
         animation: bgChange1 40s infinite !important;
         width:fit-content;
         height: 100% !important;
     }
-    
+     */
     
     .home__title {
         font-size: 5vh !important;

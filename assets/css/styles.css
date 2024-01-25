@@ -351,6 +351,13 @@ img {
 
 @media screen and (max-width: 768px) {
 
+    .home__container {
+        /* height: calc(100vh - var(--header-height)); */
+        height: 100vh;
+        row-gap: 5rem;
+    }
+
+
     .home {
         background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
         animation: bgChange1 40s infinite !important;
@@ -547,11 +554,7 @@ img {
 }
 
 
-.home__container {
-    /* height: calc(100vh - var(--header-height)); */
-    height: 100vh;
-    row-gap: 5rem;
-}
+
 
 .home__title {
     align-self: center;
@@ -756,9 +759,10 @@ img {
 }
 
 .footer__title {
-    font-size: large;
-    color: var(--text-color-light);
+    font-size: larger;
+    color: rgb(240, 240, 240);
     margin-bottom: var(--mb-2);
+    font-weight: 400;
 }
 
 .footer__link {
@@ -847,8 +851,11 @@ img {
     }
 
     .nav__link {
-        color: var(--white-color);
-        font-size: larger;
+        /* color: var(--white-color); */
+        font-size: large;
+        font-weight: 400;
+        
+        
 
     }
 
@@ -861,7 +868,7 @@ img {
     }
 
     .home__container {
-        height: 90vh !important;
+        height: 100vh !important;
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
     }

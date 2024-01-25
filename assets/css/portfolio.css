@@ -607,10 +607,11 @@ img{
 .footer__container{
     row-gap: 2rem;
 }
-.footer__title{
-    font-size: var(--normal-font-size);
-    color: var(--text-color-light);
+.footer__title {
+    font-size: larger;
+    color: rgb(240, 240, 240);
     margin-bottom: var(--mb-2);
+    font-weight: 400;
 }
 .footer__link{
     padding: .25rem 0;

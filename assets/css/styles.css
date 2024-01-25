@@ -354,8 +354,8 @@ img {
     .home {
         background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
         animation: bgChange1 40s infinite !important;
-        width: 100vw;
-        height: 100vh;
+        width:fit-content;
+        height: 100% !important;
     }
     
     

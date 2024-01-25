@@ -318,6 +318,7 @@ img {
         background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
         background-attachment: fixed;
         background-size: cover;
+        width: 100% !important;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         overflow: hidden;

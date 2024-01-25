@@ -770,6 +770,14 @@ img {
 .footer__link:hover {
     color: white !important;
 }
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.284);
+}
 
 .footer__social {
     font-size: 1.4rem;
@@ -802,14 +810,6 @@ img {
 
 
     
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.284);
-}
 
 
 
@@ -861,7 +861,7 @@ img {
     }
 
     .home__container {
-        height: 100vh;
+        height: 90vh !important;
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
     }

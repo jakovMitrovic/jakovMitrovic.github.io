@@ -106,7 +106,8 @@ html{
 }
 body{
     margin: var(--header-height) 0 0 0;
-    font-family: 'Permanent Marker', cursive !important;
+    margin: var(--header-height) 0 0 0;
+    font-family: 'Bakbak One', sans-serif;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     color: var(--text-color);

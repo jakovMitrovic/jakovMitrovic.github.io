@@ -311,50 +311,58 @@ img {
 
 
 
+@keyframes bgChange1 {
+    0% {
+        background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
+
+    }
+    15% {
+        background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
+
+    }
+    30% {
+        background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
+
+    }
+    45% {
+        background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
+
+    }
+    60% {
+        background-image: url("../img/banner/banner-phone/banner-mobile3.webp");
+    }
+
+    75% {
+        background-image: url("../img/banner/banner-phone/banner-mobile3.webp");;
+    }
+
+    90% {
+        background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
+
+    }
+
+    100% {
+        background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
+
+    }
+
+}
+
+
 @media screen and (max-width: 768px) {
 
     .home {
         background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
         animation: bgChange1 40s infinite !important;
+        width: 100vw;
+        height: 100vh;
     }
     
-    @keyframes bgChange1 {
-        0% {
-            background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
     
-        }
-        15% {
-            background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
-    
-        }
-        30% {
-            background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
-    
-        }
-        45% {
-            background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
-    
-        }
-        60% {
-            background-image: url("../img/banner/banner-phone/banner-mobile3.webp");
-        }
-    
-        75% {
-            background-image: url("../img/banner/banner-phone/banner-mobile3.webp");;
-        }
-
-        90% {
-            background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
-    
-        }
-
-        100% {
-            background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
-    
-        }
-    
+    .home__title {
+        font-size: 5vh !important;
+        margin-top: -7vh !important;
     }
-
 
 
 
@@ -363,10 +371,6 @@ img {
         text-align: center;
     }
 
-    .home__title {
-        font-size: 5vh !important;
-        margin-top: 60vh !important;
-    }
 
     .slika_kategorije {
         width: 100%;
@@ -576,10 +580,11 @@ img {
 
 .home__scroll {
     position: relative;
+    
     margin-left: auto;
     margin-right: auto;
     align-self: flex-end;
-    padding-bottom: var(--mb-4);
+    padding-bottom: 10vh;
 }
 
 .home__scroll-link {

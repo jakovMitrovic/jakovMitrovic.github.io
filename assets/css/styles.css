@@ -501,6 +501,7 @@ img {
     background-position: 50% 50%;
     overflow: hidden;
     animation: bgChange 40s infinite;
+    object-fit: contain;
 }
 
 @keyframes bgChange {
@@ -593,6 +594,7 @@ img {
     right: 0;
     bottom: 0;
     width: 295px;
+    object-fit: contain;
 }
 
 

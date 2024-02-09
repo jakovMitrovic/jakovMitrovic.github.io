@@ -115,7 +115,8 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    font-family: 'Bakbak One', sans-serif;
+    /* font-family: 'Bakbak One', sans-serif; */
+    font-family: 'Permanent Marker', cursive;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     color: var(--text-color);
@@ -447,7 +448,8 @@ img {
 }
 
 .nav__link {
-    font-family: 'Bakbak One', sans-serif;
+    /* font-family: 'Bakbak One', sans-serif; */
+    font-family: 'Permanent Marker', cursive;
     position: relative;
 
 

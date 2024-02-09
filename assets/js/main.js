@@ -66,19 +66,19 @@ sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
 
 
-/*SCROLL PORTFOLIO*/
-/////
-sr.reveal('.right', {origin:'bottom', distance: '10px', interval: 50})
-sr.reveal('.left', {origin:'bottom', distance: '10px', interval: 50})
-////
+// /*SCROLL PORTFOLIO*/
+// /////
+// sr.reveal('.right', {origin:'bottom', distance: '10px', interval: 50})
+// sr.reveal('.left', {origin:'bottom', distance: '10px', interval: 50})
+// ////
 
 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__subtitle', {})
-sr.reveal('.contact__text', {interval: 200})
-sr.reveal('.contact__input', {delay: 400})
-sr.reveal('.contact__button', {delay: 600})
+// sr.reveal('.contact__subtitle', {})
+// sr.reveal('.contact__text', {interval: 200})
+// sr.reveal('.contact__input', {delay: 400})
+// sr.reveal('.contact__button', {delay: 600})
 
 
 

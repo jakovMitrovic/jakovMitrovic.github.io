@@ -317,33 +317,44 @@ img {
         background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
 
     }
-    15% {
+    10% {
         background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
+
+    }
+    20% {
+        background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
 
     }
     30% {
         background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
 
     }
-    45% {
-        background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
-
-    }
-    60% {
+    40% {
         background-image: url("../img/banner/banner-phone/banner-mobile3.webp");
     }
 
-    75% {
+    50% {
         background-image: url("../img/banner/banner-phone/banner-mobile3.webp");;
     }
 
-    90% {
+    60% {
         background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
 
     }
 
-    100% {
+    70% {
         background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
+
+    }
+
+    
+    80% {
+        background-image: url("../img/banner/banner-phone/banner-mobile5.webp");
+
+    }
+
+    90% {
+        background-image: url("../img/banner/banner-phone/banner-mobile5.webp");
 
     }
 

@@ -46,7 +46,7 @@ const sections = document.querySelectorAll('section[id]')
 
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '80px',
+    distance: '50px',
     duration: 1000,
     reset: true
 })
@@ -54,7 +54,7 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title', {})
-sr.reveal('.home__scroll', {delay: 200})
+sr.reveal('.home__scroll', {delay: 50})
 sr.reveal('.home__img', {origin:'right', delay: 400})
 
 /*SCROLL ABOUT*/
@@ -86,3 +86,49 @@ sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
 
 
+
+
+const track = document.querySelector('.carousel__track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.carousel__button--right');
+const prevButton = document.querySelector('.carousel__button--left'); 
+const dotsNav = document.querySelector('.carousel__nav');
+// const dots = Array.from(dotsNav.children);
+
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+
+slides.forEach((slide, index) => {
+    slide.style.left = slideWidth * index + 'px'
+})
+
+
+const autoplayInterval = setInterval(function() {
+
+    // Get element via id and click next
+    const currentSlide = track.querySelector('.current-slide')
+    const nextSlide =  currentSlide.nextElementSibling;
+    
+    moveToSlide(track, currentSlide, nextSlide, 'next')
+    
+   
+  }, 10000);
+
+const moveToSlide = (track, currentSlide, targetSlide, direction) =>{
+    if(slides[slides.length - 1] == currentSlide && direction === 'next'){
+        track.style.transform = 'translateX(' + 0 + ')'
+        currentSlide.classList.remove('current-slide')
+        slides[0].classList.add('current-slide')
+        return
+    }
+    if(slides[0] == currentSlide && direction === 'prev'){
+        track.style.transform = 'translateX(-' + slides[slides.length - 1].style.left + ')'
+        currentSlide.classList.remove('current-slide')
+        slides[slides.length - 1].classList.add('current-slide')
+        return
+    }
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
+    currentSlide.classList.remove('current-slide')
+    targetSlide.classList.add('current-slide')
+
+}

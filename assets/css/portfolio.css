@@ -62,7 +62,8 @@
     font-size: 50px;
 }
 .category__title p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Playwrite IS", cursive;
+    font-optical-sizing: auto;
     font-size: large;
     font-weight: 600;
     color: #535353cb !important;
@@ -91,10 +92,10 @@
 
 
 p{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 span{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 *,::before,::after{
@@ -108,7 +109,8 @@ body{
     margin: var(--header-height) 0 0 0;
     margin: var(--header-height) 0 0 0;
     /* font-family: 'Bakbak One', sans-serif; */
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Playwrite IS", cursive;
+    font-optical-sizing: auto;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     color: var(--text-color);
@@ -175,7 +177,8 @@ img{
     padding-right: 5em;
     padding-left: 5em;
    
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+   
     color: rgba(48, 48, 48, 0.64);
     font-size: 20px;
     font-weight: bold;
@@ -501,7 +504,8 @@ img{
     margin-bottom: var(--mb-1);
 
 
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+   
     color: rgba(48, 48, 48, 0.64);
     
     font-weight: bold;
@@ -510,7 +514,9 @@ img{
 
 .noM{
     margin-bottom: 0.5em !important;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+   
     color: rgba(48, 48, 48, 0.64);
     font-size: 20px;
     font-weight: bold;
@@ -521,7 +527,7 @@ img{
     display: block;
     margin-bottom: var(--mb-4);
 
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(48, 48, 48, 0.64);
     
     font-weight: bold;
@@ -616,7 +622,7 @@ img{
 }
 .footer__link{
     padding: .25rem 0;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     
     color: var(--text-color-light) !important;
 }

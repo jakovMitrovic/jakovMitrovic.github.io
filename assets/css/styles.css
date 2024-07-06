@@ -8,7 +8,11 @@
 
 
 :root {
-    --first-color: #ddddddb1;
+    /* --first-color: #ddddddb1; */
+
+
+    --first-color: #f6f6f6f8;
+
     --white-color: #252424;
     --background-color: #ffffffc9;
     --dark-color: #313131;
@@ -64,9 +68,17 @@ span {
 }
 
 .logo {
-    margin-top: 0.5rem;
-    margin-left: 1rem;
+    /* height: 100%; */
+    /* margin-top: 0.5rem;
+    margin-left: 1rem;*/
     position: absolute;
+    top: 10px;
+    left: 5px;
+    max-height: 6vh;
+    max-width: 5vh;
+    margin: 0 !important;
+    display: flex;
+
 
 }
 
@@ -115,8 +127,9 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    /* font-family: 'Bakbak One', sans-serif; */
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Playwrite IS", cursive;
+    font-optical-sizing: auto;
+   
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     color: var(--text-color);
@@ -191,7 +204,7 @@ img {
     display: block;
     text-align: start !important;
     padding-right: 1em;
-    padding-left: 1em;
+    
     font-family: 'Montserrat', sans-serif;
     color: rgb(76, 76, 76);
 
@@ -204,7 +217,7 @@ img {
     margin-bottom: 1em;
     padding-top: 1rem;
 
-    text-align: center;
+    text-align: start;
 
 }
 
@@ -310,76 +323,52 @@ img {
     align-items: center;
 }
 
-
-
-@keyframes bgChange1 {
-    0% {
-        background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
-
-    }
-    10% {
-        background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
-
-    }
-    20% {
-        background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
-
-    }
-    30% {
-        background-image: url("../img/banner/banner-phone/banner-mobile2.webp");
-
-    }
-    40% {
-        background-image: url("../img/banner/banner-phone/banner-mobile3.webp");
-    }
-
-    50% {
-        background-image: url("../img/banner/banner-phone/banner-mobile3.webp");;
-    }
-
-    60% {
-        background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
-
-    }
-
-    70% {
-        background-image: url("../img/banner/banner-phone/banner-mobile4.webp");
-
-    }
-
-    
-    80% {
-        background-image: url("../img/banner/banner-phone/banner-mobile5.webp");
-
-    }
-
-    90% {
-        background-image: url("../img/banner/banner-phone/banner-mobile5.webp");
-
-    }
-
+#carousel__mobile{
+    display: none;
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .home__container {
-        /* height: calc(100vh - var(--header-height)); */
-        height: 100dvh !important;
-        row-gap: 5rem;
+    #carousel__desktop{
+        display: none;
     }
 
-
-    .home {
-        background-image: url("../img/banner/banner-phone/banner-mobile1.webp");
-        animation: bgChange1 40s infinite !important;
-        width:100vw !important;
-        height: auto !important;
+    #carousel__mobile{
+        display: block !important;
     }
+
+    .logo {
+
+        position: absolute;
+        top: 5px;
+        max-height: 7vh;
+        max-width: 6vh;
+        margin: 0 !important;
+        display: flex;
     
+    
+    }
+
+
+    .home__container {
+        margin: 0;
+        position: absolute;
+        z-index: 11;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh !important;
+        max-width: 100%;
+        grid-template-rows: 1.7fr 1fr;
+        row-gap: 0;
+        
+    }
+
+
     
     .home__title {
-        font-size: 4em !important;
+        font-size: 3em !important;
         margin-top: 35vh !important;
         
     }
@@ -427,6 +416,9 @@ img {
         backdrop-filter: blur(15px);
 
     }
+    .opis h1{
+        padding-left: 1em;
+    }
 
     .opis p {
         padding-left: 1em;
@@ -460,7 +452,7 @@ img {
 
 .nav__link {
     /* font-family: 'Bakbak One', sans-serif; */
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Playwrite IS", cursive;
     position: relative;
 
 
@@ -505,14 +497,7 @@ img {
 
 .home {
     position: relative;
-    background-image: url("../img/banner/banner-1.webp");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    overflow: hidden;
-    animation: bgChange 40s infinite;
-    object-fit: contain;
+    margin: 0;
 }
 
 @keyframes bgChange {
@@ -578,7 +563,7 @@ img {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30vh;
+    /* margin-top: 55vh !important; */
     text-align: center;
 
 
@@ -638,7 +623,7 @@ img {
 }
 
 .about__subtitle {
-    font-family: 'Montserrat', sans-serif;
+   
     margin-bottom: var(--mb-1);
     /* color: rgba(28, 28, 28, 0.848); */
     font-size: 28px;
@@ -795,8 +780,9 @@ img {
     width: 100%;
     height: 100%;
     top: 0px;
+    z-index: 10;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.284);
+    background-color: rgba(0, 0, 0, 0.214);
 }
 
 .footer__social {
@@ -836,7 +822,7 @@ img {
 
     .section-title::after {
         width: 64px;
-        top: 3rem;
+        top: 4rem;
     }
 
     .kategorija:hover img {
@@ -884,9 +870,15 @@ img {
     }
 
     .home__container {
+        position: absolute;
+        z-index: 11;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         height: 100vh !important;
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
+        margin: 5% 0!important;
     }
 
     .home__img {
@@ -935,4 +927,82 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+* {
+
+    margin:0;
+
+}
+
+  
+
+.carousel {
+    height:100vh;
+    width: 100%;
+    margin: 0 !important;
+    
+}
+
+.carousel__img {
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 300ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    background: rgb(255, 255, 255);
+
+}
+
+.carousel__content {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: #1C75BC;
+    border: none;
+    padding: 0;
+    z-index: 10;
+}
+
+
+.logo__img{
+    height: 100%;
+    
+    
+
 }

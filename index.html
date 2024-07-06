@@ -11,6 +11,13 @@
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
 
@@ -29,14 +36,14 @@
     <header class="l-header">
         <div class="logo">
             <a href="index.html">
-                <h2>JM Photo</h2>
+                <img class="logo__img" src="assets/img/logo.png" />
             </a>
         </div>
 
         <nav class="nav bd-grid">
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Pocetna</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Početna</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">O meni</a></li>
                     <li class="nav__item"><a href="#kategorije" class="nav__link">Kategorije</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
@@ -51,15 +58,89 @@
     <main class="l-main">
         <section class="home" id="home">
             <div class="overlay"></div>
-
             <div class="home__container bd-grid">
-                <h1 class="home__title">Jakov Mitrovic Photo</h1>
+                <h1 class="home__title">Jakov Mitrovic Photography</h1>
 
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-link"><i class='bx bx-down-arrow-alt'></i>Scroll down</a>
+               
+            </div> 
+            <div class="carousel" id="carousel__mobile">
+
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <div class="carousel__content">
+                                <img class="carousel__img" src="assets/img/banner/banner-phone/banner-mobile1.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="carousel__slide current-slide">
+                            <div class="carousel__content">
+                                <img class="carousel__img" src="assets/img/banner/banner-phone/banner-mobile2.webp" alt="">
+
+                            </div>
+                        </li>
+                        <li class="carousel__slide current-slide">
+                            <div class="carousel__content">
+                                <img class="carousel__img" src="assets/img/banner/banner-phone/banner-mobile3.webp" alt="">
+
+                            </div>
+                        </li>
+                        <li class="carousel__slide current-slide">
+                            <div class="carousel__content">
+                                <img class="carousel__img" src="assets/img/banner/banner-phone/banner-mobile4.webp" alt="">
+
+                            </div>
+                        </li>
+                        <li class="carousel__slide current-slide">
+                            <div class="carousel__content">
+                                <img class="carousel__img" src="assets/img/banner/banner-phone/banner-mobile5.webp" alt="">
+
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
-
             </div>
+        </div>
+
+                <div class="carousel" id="carousel__desktop">
+
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <div class="carousel__content">
+                                    <img class="carousel__img" src="assets/img/banner/banner-1.webp" alt="">
+                                </div>
+                            </li>
+                            <li class="carousel__slide current-slide">
+                                <div class="carousel__content">
+                                    <img class="carousel__img" src="assets/img/banner/banner-2.webp" alt="">
+
+                                </div>
+                            </li>
+                            <li class="carousel__slide current-slide">
+                                <div class="carousel__content">
+                                    <img class="carousel__img" src="assets/img/banner/banner-3.webp" alt="">
+
+                                </div>
+                            </li>
+                            <li class="carousel__slide current-slide">
+                                <div class="carousel__content">
+                                    <img class="carousel__img" src="assets/img/banner/banner-4.webp" alt="">
+
+                                </div>
+                            </li>
+                            <li class="carousel__slide current-slide">
+                                <div class="carousel__content">
+                                    <img class="carousel__img" src="assets/img/banner/banner-5.webp" alt="">
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section class="about section" id="about">
@@ -72,7 +153,7 @@
 
                 <div class="detalji">
                     <h2 class="about__subtitle">Pozdrav,</h2>
-                    <h2 class="about__subtitle"> ja sam Jakov Mitrovic</h2>
+                    <h2 class="about__subtitle"> ja sam Jakov Mitrović</h2>
                     <p class="about__text noM">
                         Fotograf sa preko 7 godina iskustva. Baziran u Novom Sadu, dostupan gde god vam je potrebno.
                         Ako vam je potreban kreativan fotograf mozete mi se javiti na e-mail, instagram ili na telefon.
@@ -98,7 +179,7 @@
                         <img class="slika_kategorije" src="assets/img/kategorije/krstenje.webp">
                     </div>
                     <div class="opis">
-                        <h1>Krstenja</h1>
+                        <h1>Krštenja</h1>
                         <p>Fotografisanje krštenja i prvih rodjendana, u crkvi i u restoranu.
                         </p>
                     </div>
@@ -122,7 +203,7 @@
                         <img class="slika_kategorije" src="assets/img/kategorije/svadba.webp">
                     </div>
                     <div class="opis">
-                        <h1>Vencanja</h1>
+                        <h1>Venčanja</h1>
                         <p>Fotografisanje vašeg venčanja, veridbe i porodica.
                         </p>
                     </div>
@@ -195,15 +276,15 @@
     <footer class="footer section">
         <div class="footer__container bd-grid">
             <div class="footer__data">
-                <h2 class="footer__title">Jakov Mitrovic</h2>
+                <h2 class="footer__title">Jakov Mitrović</h2>
                 <p class="footer__text">I'm Jakov Mitrovic and this is my personal website</p>
             </div>
 
             <div class="footer__data">
                 <h2 class="footer__title">Kategorije</h2>
                 <ul>
-                    <li><a href="vencanja.html" class="footer__link">Vencanja</a></li>
-                    <li><a href="krstenja.html" class="footer__link">Krstenja</a></li>
+                    <li><a href="vencanja.html" class="footer__link">Venčanja</a></li>
+                    <li><a href="krstenja.html" class="footer__link">Krštenja</a></li>
                     <li><a href="rodjendani.html" class="footer__link">Rodjendani</a></li>
                     <li><a href="fitness.html" class="footer__link">Fitness</a></li>
                     <li><a href="proizvodi.html" class="footer__link">Proizvodi</a></li>

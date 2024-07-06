@@ -484,57 +484,6 @@ img {
     margin: 0;
 }
 
-@keyframes bgChange {
-    0% {
-        background-image: url("../img/banner/banner-1.webp");
-
-    }
-
-    10% {
-        background-image: url("../img/banner/banner-1.webp");
-
-    }
-
-    20% {
-        background-image: url("../img/banner/banner-2.webp");
-
-    }
-
-    30% {
-        background-image: url("../img/banner/banner-2.webp");
-
-    }
-
-    40% {
-        background-image: url("../img/banner/banner-3.webp");
-
-    }
-
-    50% {
-        background-image: url("../img/banner/banner-3.webp");
-
-    }
-
-    60% {
-        background-image: url("../img/banner/banner-4.webp");
-
-    }
-
-    70% {
-        background-image: url("../img/banner/banner-4.webp");
-
-    }
-
-    80% {
-        background-image: url("../img/banner/banner-5.webp");
-
-    }
-
-    90% {
-        background-image: url("../img/banner/banner-5.webp");
-
-    }
-}
 
 
 
@@ -547,7 +496,7 @@ img {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 55vh !important; */
+    margin-top: 40vh !important;
     text-align: center;
 
 

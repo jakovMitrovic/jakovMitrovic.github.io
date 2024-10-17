@@ -8,10 +8,10 @@
 
 
 :root {
-    /* --first-color: #ddddddb1; */
+    
+    /* --first-color: #f6f6f6f8; */
 
-
-    --first-color: #f6f6f6f8;
+    --first-color: #f1f3f4c7;
 
     --white-color: #252424;
     --background-color: #ffffffc9;
@@ -52,7 +52,7 @@ span {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     .kategorije {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -65,13 +65,17 @@ span {
 
     }
 
+    .opis p {
+        font-size: 18px !important;
+    }
+
 }
 
-.logo{
+.logo {
     margin-top: 0.5rem;
     margin-left: 1rem;
     position: absolute;
-    
+
 }
 
 
@@ -118,15 +122,15 @@ html {
 }
 
 
-  
+
 
 body {
-    
+
     font-family: "Playwrite IS", cursive;
     font-weight: 300;
     font-style: normal;
     font-optical-sizing: auto;
-   
+
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     color: var(--text-color);
@@ -178,7 +182,8 @@ img {
     margin-top: 2em;
     font-display: flex;
     background-color: var(--first-color);
-    
+
+
 
     padding: 0 !important;
     border-radius: 10px;
@@ -188,7 +193,7 @@ img {
 .slika_kategorije {
     width: 500px;
     /* max-height:430px; */
-    object-fit:cover !important;
+    object-fit: cover !important;
     margin: 0 !important;
     padding: 0 !important;
     border-radius: 10px 0 0 10px;
@@ -204,10 +209,10 @@ img {
     display: block;
     text-align: start !important;
     padding-right: 1em;
-    
+
     font-family: 'Montserrat', sans-serif;
     color: rgb(76, 76, 76);
-    text-shadow: rgba(215, 214, 214, 0.855) 1px 0 10px;
+
     font-size: 21px;
     font-weight: 300;
 
@@ -216,7 +221,7 @@ img {
 .opis h1 {
     margin-bottom: 1em;
     padding-top: 1rem;
-    text-shadow: rgba(235, 235, 235, 0.855) 1px 0 10px;
+
     text-align: start;
 
 }
@@ -335,18 +340,32 @@ img {
     align-items: center;
 }
 
-#carousel__mobile{
+#carousel__mobile {
     display: none;
 }
+
+/* 
+@media screen and (max-width: 1400px) {
+
+    .bd-grid {
+        max-width: 400px !important;
+        
+        grid-template-columns: repeat(2, 1fr) !important;
+        align-items: center;
+        text-align: initial;
+        padding: 4rem 0;
+       
+    }
+}  */
 
 
 @media screen and (max-width: 768px) {
 
-    #carousel__desktop{
+    #carousel__desktop {
         display: none;
     }
 
-    #carousel__mobile{
+    #carousel__mobile {
         display: block !important;
     }
 
@@ -363,20 +382,23 @@ img {
         max-width: 99%;
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
-        
+
     }
 
 
-    
+
     .home__title {
         font-size: 2.5rem !important;
         margin-top: 55vh !important;
         margin-left: auto;
         margin-right: auto;
         max-width: 90%;
-        
+
     }
 
+    .logo h2{
+        font-weight: 300;
+    }
 
 
 
@@ -421,7 +443,8 @@ img {
         backdrop-filter: blur(15px);
 
     }
-    .opis h1{
+
+    .opis h1 {
         padding-left: 1em;
     }
 
@@ -510,13 +533,13 @@ img {
 
 
 .home__title {
-    font-family: "Satisfy", cursive !important; 
+    font-family: "Satisfy", cursive !important;
     align-self: center;
     font-size: 8em;
     font-weight: lighter !important;
     color: rgb(255, 255, 255);
     line-height: 1.2;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -528,7 +551,7 @@ img {
 
 .home__scroll {
     position: relative;
-    
+
     margin-left: auto;
     margin-right: auto;
     align-self: flex-end;
@@ -578,7 +601,7 @@ img {
 }
 
 .about__subtitle {
-   
+
     margin-bottom: var(--mb-1);
     /* color: rgba(28, 28, 28, 0.848); */
     font-size: 28px;
@@ -730,6 +753,7 @@ img {
 .footer__link:hover {
     color: white !important;
 }
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -770,7 +794,7 @@ img {
     }
 
 
-    
+
 
 
 
@@ -811,8 +835,8 @@ img {
         /* color: var(--white-color); */
         font-size: large;
         font-weight: 400;
-        
-        
+
+
 
     }
 
@@ -833,7 +857,7 @@ img {
         height: 100vh !important;
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
-        margin: 5% 0!important;
+        margin: 5% 0 !important;
     }
 
     .home__img {
@@ -886,21 +910,21 @@ img {
 
 * {
 
-    margin:0;
+    margin: 0;
 
 }
 
-  
+
 
 .carousel {
-    height:100vh;
+    height: 100vh;
     width: 100%;
     margin: 0 !important;
-    
+
 }
 
 .carousel__img {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     display: flex;
     width: 100%;
     height: 100%;
@@ -943,21 +967,11 @@ img {
 }
 
 
-.carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    background-color: #1C75BC;
-    border: none;
-    padding: 0;
-    z-index: 10;
-}
 
 
-.logo__img{
+.logo__img {
     height: 100%;
-    
-    
+
+
 
 }

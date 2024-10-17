@@ -8,11 +8,15 @@
 }
 
 
-:root{
-    --first-color: #ddddddb1;
+:root {
+    
+    /* --first-color: #f6f6f6f8; */
+
+    --first-color: #f1f3f4c7;
+
     --white-color: #252424;
-    --background-color:#ffffffc9;
-    --dark-color:#313131;
+    --background-color: #ffffffc9;
+    --dark-color: #313131;
     --text-color: #363636;
     --text-color-light: #ffffffc9;
 }
@@ -294,6 +298,10 @@ img{
     .item:hover {
         transform: scale(1.1) !important;
  
+    }
+
+    .logo h2{
+        font-weight: 300;
     }
 
     .category__title h1{

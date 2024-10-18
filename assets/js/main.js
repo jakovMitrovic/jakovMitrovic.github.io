@@ -1,20 +1,20 @@
-/*===== MENU SHOW =====*/ 
-const showMenu = (toggleId, navId) =>{
+/*===== MENU SHOW =====*/
+const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+        nav = document.getElementById(navId)
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
             nav.classList.toggle('show')
         })
     }
 }
-showMenu('nav-toggle','nav-menu')
+showMenu('nav-toggle', 'nav-menu')
 
 /*===== REMOVE MENU MOBILE =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction(){
+function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show')
 }
@@ -25,25 +25,30 @@ const sections = document.querySelectorAll('section[id]')
 
 
 
+
+
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '50px',
+    distance: '30px',
     duration: 1000,
-    reset: true
+    reset: false,
+  
 })
 
 
 /*SCROLL HOME*/
-// sr.reveal('.home__title', {})
-sr.reveal('.home__scroll', {delay: 50})
-sr.reveal('.home__img', {origin:'right', delay: 400})
+sr.reveal('.home__title', { origin: 'bottom' })
+
+
 
 /*SCROLL ABOUT*/
-sr.reveal('.about__img', {delay: 500})
-sr.reveal('.about__subtitle', {delay: 300})
-sr.reveal('.about__profession', {delay: 400})
-sr.reveal('.about__text', {delay: 500})
-sr.reveal('.about__social-icon', {delay: 600, interval: 200})
+sr.reveal('.about__img', { delay: 500 })
+sr.reveal('.about__subtitle', { delay: 300 })
+sr.reveal('.about__profession', { delay: 400 })
+sr.reveal('.about__text', { delay: 500 })
+sr.reveal('.about__social-icon', { delay: 600, interval: 200 })
+
+sr.reveal('.kategorija', { delay: 50, interval:50 })
 
 
 
@@ -69,40 +74,40 @@ slidesMobile.forEach((slide, index) => {
     slide.style.left = slideWidthMobile * index + 'px'
 })
 
-const autoplayInterval = setInterval(function() {
+const autoplayInterval = setInterval(function () {
     const currentSlideDesktop = trackDesktop.querySelector('.current-slide-desktop')
-    const nextSlideDesktop =  currentSlideDesktop.nextElementSibling;
+    const nextSlideDesktop = currentSlideDesktop.nextElementSibling;
 
     const currentSlideMobile = trackMobile.querySelector('.current-slide-mobile')
-    const nextSlideMobile =  currentSlideMobile.nextElementSibling;
-    
+    const nextSlideMobile = currentSlideMobile.nextElementSibling;
+
 
     moveToSlide(slidesDesktop, trackDesktop, currentSlideDesktop, nextSlideDesktop, 'desktop')
     moveToSlide(slidesMobile, trackMobile, currentSlideMobile, nextSlideMobile, 'mobile')
 }, 5000);
 
 
-const moveToSlide = (slides, track, currentSlide, targetSlide,  screen) =>{
-    if(screen === "desktop"){
-        if(slides[slides.length - 1] == currentSlide){
+const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
+    if (screen === "desktop") {
+        if (slides[slides.length - 1] == currentSlide) {
             track.style.transform = 'translateX(' + 0 + ')'
             currentSlide.classList.remove('current-slide-desktop')
             slides[0].classList.add('current-slide-desktop')
             return
         }
-       
+
         track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
         currentSlide.classList.remove('current-slide-desktop')
         targetSlide.classList.add('current-slide-desktop')
     }
-    if(screen === "mobile"){
-        if(slides[slides.length - 1] == currentSlide){
+    if (screen === "mobile") {
+        if (slides[slides.length - 1] == currentSlide) {
             track.style.transform = 'translateX(' + 0 + ')'
             currentSlide.classList.remove('current-slide-mobile')
             slides[0].classList.add('current-slide-mobile')
             return
         }
-       
+
         track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
         currentSlide.classList.remove('current-slide-mobile')
         targetSlide.classList.add('current-slide-mobile')

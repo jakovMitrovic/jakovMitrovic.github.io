@@ -239,13 +239,14 @@ img {
 .section-title::after {
     position: absolute;
     content: "";
-    width: 32px;
-    height: .18rem;
+    width: 20px;
+    height: 2px;
+    border-radius: 25px;
     left: 0;
     right: 0;
     margin: auto;
-    top: 2rem;
-    background-color: var(--white-color);
+    top: 1.5em !important; 
+    background-color: rgb(65, 65, 65);
 }
 
 
@@ -361,6 +362,13 @@ img {
 
 @media screen and (max-width: 768px) {
 
+    .about__subtitle {
+        font-size: 24px !important;
+    
+    
+    }
+
+  
     #carousel__desktop {
         display: none;
     }
@@ -389,7 +397,8 @@ img {
 
     .home__title {
         font-size: 2.5rem !important;
-        margin-top: 55vh !important;
+        padding-top: 45vh !important;
+        /* margin-top: 55vh !important; */
         margin-left: auto;
         margin-right: auto;
         max-width: 90%;
@@ -420,7 +429,7 @@ img {
     }
 
     .noM {
-        font-size: 18px !important;
+        font-size: 16px !important;
 
     }
 
@@ -452,7 +461,7 @@ img {
         padding-left: 1em;
         padding-right: 1em;
         padding-bottom: 1em;
-        font-size: large;
+        font-size:medium;
     }
 
     .footer__container {
@@ -618,7 +627,7 @@ img {
     margin-bottom: 0.5em !important;
     font-family: 'Montserrat', sans-serif;
     color: rgba(28, 28, 28, 0.848);
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     padding-top: 1rem;
 
@@ -873,8 +882,9 @@ img {
     }
 
     .about__img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+        align-self: center;
     }
 
     .about__img img {

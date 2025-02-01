@@ -13,6 +13,8 @@
 
     --first-color: #f1f3f4c7;
 
+
+
     --white-color: #252424;
     --background-color: #ffffffc9;
     --dark-color: #313131;
@@ -52,24 +54,32 @@ span {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 @media screen and (min-width: 1200px) {
     .kategorije {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+
+       
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         margin-left: 10em !important;
         margin-right: 10em !important;
         margin-bottom: 5em;
+        
 
     }
 
     .opis p {
-        font-size: 18px !important;
+        /* font-size: 18px !important; */
+        font-size: 16px !important;
     }
 
 }
+
+
 
 .logo {
     margin-top: 0.5rem;
@@ -87,6 +97,8 @@ span {
 
 .kategorija {
     overflow: hidden !important;
+    
+    
 }
 
 .img__container {
@@ -183,6 +195,9 @@ img {
     font-display: flex;
     background-color: var(--first-color);
 
+    box-shadow: 20px 20px 60px #dfdfdf,
+                  -20px -20px 60px #ffffff;
+   
 
 
     padding: 0 !important;
@@ -396,12 +411,18 @@ img {
 
 
     .home__title {
-        font-size: 2.5rem !important;
-        padding-top: 45vh !important;
+        font-family: "Satisfy", cursive !important;
+        text-align: center !important;
+        font-size: 2.7rem !important;
+        padding-top: 55vh !important;
         /* margin-top: 55vh !important; */
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
         max-width: 90%;
+        color: rgb(255, 255, 255) !important;
+
+        
+     
 
     }
 
@@ -538,23 +559,43 @@ img {
 }
 
 
-
-
-
-.home__title {
-    font-family: "Satisfy", cursive !important;
-    align-self: center;
-    font-size: 8em;
-    font-weight: lighter !important;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
+@media screen and (min-width: 769px)    {
+    .home__title {
+        font-family: "Satisfy", cursive !important;
+        align-self: center;
+        font-size: 5em !important;
+        font-weight: lighter !important;
+        color: rgb(255, 255, 255) !important;
+        line-height: 1.1;
+        margin-top: 1.1em !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 80%;
+    }
 
 }
+
+@media screen and (min-width: 1500px)    {
+
+    .home__title {
+        font-family: "Satisfy", cursive !important;
+        align-self: center;
+        font-size: 8em !important;
+        font-weight: lighter !important;
+        color: rgb(255, 255, 255) !important;
+        line-height: 1.2;
+        margin-top: 1.6em !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    
+    
+    }
+
+}
+
+
 
 
 
@@ -814,13 +855,14 @@ img {
     }
 
     .kategorija:hover img {
-        transform: scale(1.1);
+        transform: scale(1.02);
 
     }
 
     .kategorija:hover {
 
         color: rgb(0, 0, 0) !important;
+        background-color: white;
     }
 
     .nav {
@@ -985,3 +1027,13 @@ img {
 
 
 }
+
+@media screen and (min-width: 1600px) {
+    .kategorije {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+}
+

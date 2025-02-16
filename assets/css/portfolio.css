@@ -246,12 +246,12 @@ img{
 }
 
 
-.item img :hover{
+/* .item img :hover{
     transition: 200ms;
     
     transform: scale(1.05);
     
-}
+} */
 
 
 .bd-grid2{
@@ -295,10 +295,10 @@ img{
 
 
 @media screen and (max-width: 768px){
-    .item:hover {
+    /* .item:hover {
         transform: scale(1.1) !important;
  
-    }
+    } */
 
     .logo h2{
         font-weight: 300;
@@ -743,10 +743,9 @@ img{
         margin-left: auto;
         margin-right: auto;
     }
-    .item:hover{
-        transform: scale(1.4);
-        box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.399), 0 40px 180px 0 rgba(0, 0, 0, 0.445);
-    }
+     .item:hover{
+        scale: 0.95;
+    } 
 }
 
 
@@ -766,6 +765,7 @@ img{
     row-gap: 0.5em;
     font-size: .85em;
     margin-top: 5em !important;
+    
    
 }
 
@@ -775,7 +775,6 @@ img{
 
 .item {
     display: inline-block;
-
     padding: 0;
     margin: 0 0 1.5em;
     width: 100%;
@@ -783,6 +782,7 @@ img{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    
   }
   .item img{
     border-radius: 5px;

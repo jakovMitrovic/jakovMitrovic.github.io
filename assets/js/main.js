@@ -1,7 +1,9 @@
 /*===== MENU SHOW =====*/
+
+
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+    nav = document.getElementById(navId)
 
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
@@ -32,7 +34,7 @@ const sr = ScrollReveal({
     distance: '30px',
     duration: 1000,
     reset: false,
-  
+    
 })
 
 
@@ -77,10 +79,10 @@ slidesMobile.forEach((slide, index) => {
 const autoplayInterval = setInterval(function () {
     const currentSlideDesktop = trackDesktop.querySelector('.current-slide-desktop')
     const nextSlideDesktop = currentSlideDesktop.nextElementSibling;
-
+    
     const currentSlideMobile = trackMobile.querySelector('.current-slide-mobile')
     const nextSlideMobile = currentSlideMobile.nextElementSibling;
-
+    
 
     moveToSlide(slidesDesktop, trackDesktop, currentSlideDesktop, nextSlideDesktop, 'desktop')
     moveToSlide(slidesMobile, trackMobile, currentSlideMobile, nextSlideMobile, 'mobile')
@@ -112,5 +114,23 @@ const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
         currentSlide.classList.remove('current-slide-mobile')
         targetSlide.classList.add('current-slide-mobile')
     }
-
+    
 }
+
+
+function popUp(){
+
+    
+    // Pop up
+    $(function () {
+        $('.masonry').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: { enabled: true }
+        });
+        
+    });
+}
+
+popUp()
+    

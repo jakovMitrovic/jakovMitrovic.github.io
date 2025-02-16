@@ -396,6 +396,12 @@ header{
     }
 
   
+    .logo img{
+        max-width:5rem;
+
+    }
+
+
     #carousel__desktop {
         display: none;
     }

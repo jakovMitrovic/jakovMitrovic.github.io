@@ -325,6 +325,11 @@ img {
         font-weight: 300;
     }
 
+    .logo img{
+        max-width:5rem;
+
+    }
+
     .category__title h1 {
         margin-bottom: 0.5em;
     }

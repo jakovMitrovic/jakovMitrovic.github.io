@@ -306,6 +306,10 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--first-color);
+    animation: 0.3s fadeIn;
+    animation-fill-mode: forwards;
+
+    visibility: hidden;
 
 }
 

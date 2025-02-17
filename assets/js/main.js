@@ -42,11 +42,12 @@ const sr = ScrollReveal({
 sr.reveal('.home__title', { origin: 'bottom' })
 
 
-sr.reveal('.nav__list', { origin: 'right' })
-sr.reveal('.logo', { origin: 'left' })
+sr.reveal('.l-header', { origin: 'top' })
+sr.reveal('.logo', { origin: 'top', delay:200 })
 
+sr.reveal('.masonry', { origin: 'bottom' })
 
-
+masonry
 
 
 
@@ -125,19 +126,4 @@ const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
 }
 
 
-function popUp(){
-
-    
-    // Pop up
-    $(function () {
-        $('.masonry').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: { enabled: true }
-        });
-        
-    });
-}
-
-popUp()
     

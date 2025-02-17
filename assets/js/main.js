@@ -42,6 +42,13 @@ const sr = ScrollReveal({
 sr.reveal('.home__title', { origin: 'bottom' })
 
 
+sr.reveal('.nav__list', { origin: 'right' })
+sr.reveal('.logo', { origin: 'left' })
+
+
+
+
+
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img', { delay: 500 })

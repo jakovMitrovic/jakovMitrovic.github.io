@@ -58,14 +58,19 @@
 }
 
 .logo {
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     margin-left: 1rem;
     position: absolute;
+
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
 
 }
 
 .logo img{
-    max-width:6rem;
+    max-width:5rem;
     margin: 0;
 }
 
@@ -417,10 +422,10 @@ img {
 .active::after {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 5%;
     height: .18rem;
-    left: 0;
-    top: 2rem;
+    left: 45%;
+    top: 1.9rem;
     background-color: var(--first-color);
 }
 
@@ -740,6 +745,10 @@ img {
 
     .nav__list {
         display: flex;
+        animation: 0.5s fadeIn;
+        animation-fill-mode: forwards;
+    
+        visibility: hidden;
     }
 
     .nav__item {

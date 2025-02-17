@@ -82,14 +82,19 @@ span {
 
 
 .logo {
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     margin-left: 1rem;
     position: absolute;
+
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
 
 }
 
 .logo img{
-    max-width:6rem;
+    max-width:5rem;
     margin: 0;
 }
 
@@ -359,7 +364,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease;
+
     
 }
 
@@ -396,10 +401,7 @@ header{
     }
 
   
-    .logo img{
-        max-width:5rem;
-
-    }
+    
 
 
     #carousel__desktop {
@@ -576,18 +578,21 @@ header{
 
     animation: 0.1s fadeIn;
     animation-fill-mode: forwards;
-
+    
     visibility: hidden;
-
+    
+    
 
 }
 
 @keyframes fadeIn {
     99% {
+
         visibility: hidden;
     }
 
     100% {
+        
         visibility: visible;
     }
 }
@@ -905,6 +910,10 @@ header{
 
     .nav__list {
         display: flex;
+        animation: 0.5s fadeIn;
+        animation-fill-mode: forwards;
+    
+        visibility: hidden;
     }
 
     .nav__item {

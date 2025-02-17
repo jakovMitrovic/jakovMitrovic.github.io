@@ -45,9 +45,8 @@ sr.reveal('.home__title', { origin: 'bottom' })
 sr.reveal('.l-header', { origin: 'top' })
 sr.reveal('.logo', { origin: 'top', delay:200 })
 
-sr.reveal('.masonry', { origin: 'bottom' })
 
-masonry
+
 
 
 
@@ -59,8 +58,6 @@ sr.reveal('.about__text', { delay: 500 })
 sr.reveal('.about__social-icon', { delay: 600, interval: 200 })
 
 sr.reveal('.kategorija', { delay: 50, interval:50 })
-
-
 
 
 //// Carousel Desktop
@@ -91,10 +88,11 @@ const autoplayInterval = setInterval(function () {
     const currentSlideMobile = trackMobile.querySelector('.current-slide-mobile')
     const nextSlideMobile = currentSlideMobile.nextElementSibling;
     
-
+    
     moveToSlide(slidesDesktop, trackDesktop, currentSlideDesktop, nextSlideDesktop, 'desktop')
     moveToSlide(slidesMobile, trackMobile, currentSlideMobile, nextSlideMobile, 'mobile')
 }, 5000);
+
 
 
 const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
@@ -117,7 +115,7 @@ const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
             slides[0].classList.add('current-slide-mobile')
             return
         }
-
+        
         track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
         currentSlide.classList.remove('current-slide-mobile')
         targetSlide.classList.add('current-slide-mobile')
@@ -126,4 +124,3 @@ const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
 }
 
 
-    

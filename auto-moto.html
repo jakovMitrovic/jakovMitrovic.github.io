@@ -317,6 +317,16 @@
                 gallery: { enabled: true }
             });
 
+            const sr = ScrollReveal({
+                origin: 'top',
+                distance: '30px',
+                duration: 1000,
+                reset: false,
+
+            })
+            sr.reveal('.category__title', { origin: 'top' })
+            sr.reveal('.masonry', { origin: 'bottom' })
+
         });
     </script>
 </body>

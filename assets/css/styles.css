@@ -583,7 +583,7 @@ header {
     position: relative;
     margin: 0;
 
-    animation: 0.1s fadeIn;
+    animation: 0.3s fadeIn;
     animation-fill-mode: forwards;
 
     visibility: hidden;

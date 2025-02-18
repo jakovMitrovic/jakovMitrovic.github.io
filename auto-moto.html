@@ -307,7 +307,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+
     <script>
         // Pop up
         $(function () {
@@ -316,16 +317,6 @@
                 type: 'image',
                 gallery: { enabled: true }
             });
-
-            const sr = ScrollReveal({
-                origin: 'top',
-                distance: '30px',
-                duration: 1000,
-                reset: false,
-
-            })
-            sr.reveal('.category__title', { origin: 'top' })
-            sr.reveal('.masonry', { origin: 'bottom' })
 
         });
     </script>

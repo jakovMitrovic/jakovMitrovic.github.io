@@ -39,6 +39,8 @@ const sr = ScrollReveal({
 
 
 /*SCROLL HOME*/
+
+
 sr.reveal('.home__title', { origin: 'bottom' })
 
 

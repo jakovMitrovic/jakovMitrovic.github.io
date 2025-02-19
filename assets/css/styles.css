@@ -33,6 +33,43 @@
 
 }
 
+.welcome {
+    width: 100%;
+    
+
+    text-align: center;
+
+    z-index: 0;
+
+
+
+}
+
+
+.slova{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    
+}
+
+
+.slova h1 {
+    font-size: 4rem;
+    color: #313131bb;
+
+ 
+
+}
+
+/* .l-main{
+    display: none;
+} */
+
 @media screen and (min-width: 768px) {
     :root {
         --big-font-size: 9rem;
@@ -356,7 +393,6 @@ img {
     background-color: var(--first-color);
     animation: 0.3s fadeIn;
     animation-fill-mode: forwards;
-
     visibility: hidden;
 
 }

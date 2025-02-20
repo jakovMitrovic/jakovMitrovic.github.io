@@ -25,7 +25,7 @@
 
     border-radius: 20px;
     max-width: 30rem;
-    max-height: 40rem;
+    max-height: 50rem;
     text-align: start;
     padding: 5rem;
     padding-top: 3rem;
@@ -85,12 +85,12 @@
     .kategorije {
         
         margin:auto;
-        width: 90%;
+        width: 95%;
 
     }
     .ponuda{
         margin: 4rem auto;
-        padding: 3rem;
+        padding: 0.5rem 3rem;
     }
 
 }

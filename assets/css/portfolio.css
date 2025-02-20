@@ -21,7 +21,47 @@
     --text-color-light: #ffffffc9;
 }
 
+.ponuda{
 
+    border-radius: 20px;
+    max-width: 30rem;
+    max-height: 40rem;
+    text-align: start;
+    padding: 5rem;
+    padding-top: 3rem;
+
+    font-display: flex;
+    /* background-color: var(--first-color); */
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 20px 20px 60px #dfdfdf,
+        -20px -20px 60px #ffffff;
+
+
+        cursor:default;
+
+   
+  
+}
+.ponuda p{
+    margin-bottom: 0.3rem;
+}
+.ponuda h1{
+    margin-bottom: 2rem;
+    background-color:var(--first-color);
+    border-radius: 1rem;
+}
+
+.ponuda h1,h2{
+    text-align: center;
+}
+
+.ponuda:hover > .cena{
+    color: #000000;
+    font-size: 3rem;
+    margin-top: 1rem;
+    transition: 400ms ease all;
+}
 :root {
     --body-font: 'Montserrat', sans-serif;
 
@@ -41,21 +81,61 @@
 
 }
 
+@media screen and (max-width: 1199px) {
+    .kategorije {
+        
+        margin:auto;
+        width: 90%;
 
-@media screen and (min-width: 1600px) {
+    }
+    .ponuda{
+        margin: 4rem auto;
+        padding: 3rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
     .kategorije {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        
+
+
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        margin-left: 10em !important;
-        margin-right: 10em !important;
+   
         margin-bottom: 5em;
 
     }
 
+    .ponuda{
+        margin: 1rem;
+    }
+
 }
+@media screen and (min-width: 1600px) {
+    .kategorije {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    
+        margin-bottom: 5em;
+
+
+        display: flex;
+        justify-content: center;
+        
+        
+
+    }
+    
+
+}
+
 
 .logo {
     margin-top: 0.3rem;
@@ -93,9 +173,10 @@
 
 
 .kategorije {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: auto;
+    margin-top: 4rem;
     margin-bottom: 5em;
+    width: 80%;
 }
 
 

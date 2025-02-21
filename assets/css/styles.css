@@ -280,11 +280,14 @@ img {
 
 }
 
-.opis h1 {
+.opis h2 {
     margin-bottom: 1em;
     padding-top: 1rem;
 
     text-align: start;
+
+    font-size: 2rem;
+    
 
 }
 
@@ -346,6 +349,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 
@@ -541,7 +545,7 @@ header {
 
     }
 
-    .opis h1 {
+    .opis h2 {
         padding-left: 1em;
     }
 

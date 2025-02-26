@@ -416,6 +416,11 @@ img {
         font-weight: 300;
     }
 
+
+    .dobrodosliLogo{
+        max-width: 40%;
+    }
+
     .logo img{
         max-width:5rem;
 

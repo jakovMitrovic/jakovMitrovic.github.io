@@ -455,7 +455,9 @@ header {
 
     
 
-
+    .dobrodosliLogo{
+        max-width: 40%;
+    }
 
 
 
@@ -495,7 +497,7 @@ header {
         margin-right: auto !important;
         max-width: 90%;
         color: rgb(255, 255, 255) !important;
-
+   
 
 
 

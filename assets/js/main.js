@@ -41,11 +41,11 @@ const sr = ScrollReveal({
 /*SCROLL HOME*/
 
 
-sr.reveal('.home__title', { origin: 'bottom' })
+sr.reveal('.home__title', { origin: 'bottom', delay:400 })
 
 
 sr.reveal('.l-header', { origin: 'top' })
-sr.reveal('.logo', { origin: 'top', delay:200 })
+sr.reveal('.logo', { origin: 'top', delay:300 })
 
 
 

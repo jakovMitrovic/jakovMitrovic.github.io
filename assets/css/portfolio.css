@@ -627,7 +627,7 @@ img {
     transform: translate(-50%, -50%);
     z-index: 0;
 
-    animation: 0.3s fadeOut;
+    animation: 0.5s fadeOut;
     animation-fill-mode: forwards;
 
     visibility: visible;
@@ -867,7 +867,7 @@ img {
 
     .nav__list {
         display: flex;
-        animation: 0.5s fadeIn;
+        animation: 0.7s fadeIn;
         animation-fill-mode: forwards;
     
         visibility: hidden;

@@ -343,7 +343,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-      animation: 0.5s fadeOut;
+      animation: 1.1s fadeOut;
     animation-fill-mode: forwards;
 
     visibility: visible;
@@ -404,7 +404,7 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--first-color);
-    animation: 0.5s fadeIn;
+    animation: 1.2s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
 

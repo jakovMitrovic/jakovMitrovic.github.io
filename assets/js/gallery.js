@@ -37,5 +37,5 @@ sr.reveal('.logo', { origin: 'top', delay:200 })
 
 
 sr.reveal('.category__title', { origin: 'top', delay:500})
-sr.reveal('.masonry', { origin: 'bottom', delay:1000 })
+sr.reveal('.masonry', { origin: 'bottom', delay:1200 })
 

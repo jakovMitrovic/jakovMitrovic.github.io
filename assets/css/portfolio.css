@@ -456,16 +456,25 @@ img {
 
     .nav__menu {
         position: fixed;
-        top: 550%;
-        right: 100%;
-        width: 90%;
-        height: 30rem;
+        top: 48vh;
+        left: 100%;
+        width: 70%;
+        /* max-height: 20rem; */
         padding: 3rem;
-        background-color: rgba(255, 255, 255, 0.88);
+        background-color: rgba(255, 255, 255, 0.856);
         border-radius: 10px;
-        ;
         transition: .6s;
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(20px);
+
+        /* visibility: hidden; */
+
+
+
+
+    }
+    .nav__list {
+        justify-self: center;
+        
 
     }
 
@@ -510,9 +519,11 @@ img {
 
 
 .show {
-    right: 0;
+    left: 7%;
+
 
 }
+
 
 
 
@@ -622,7 +633,7 @@ img {
 
 .dobrodosliLogo{
     position: absolute;
-    top: 50%;
+    top: 37vh;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
@@ -800,6 +811,31 @@ img {
     cursor: pointer;
 }
 
+.bg-blur   {
+   
+    backdrop-filter: blur(10px);
+    z-index: 98 !important;
+  
+
+}
+
+body{
+    position: relative;
+    height: 100%;
+}
+
+.overlay_bg {
+    
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    bottom: 0px;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -9999;
+
+}
 
 .footer {
     background-color: var(--dark-color);

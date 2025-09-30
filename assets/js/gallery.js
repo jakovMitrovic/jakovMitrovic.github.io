@@ -3,11 +3,14 @@
 
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+    nav = document.getElementById(navId)
+    const blur = document.querySelector(".overlay_bg")
 
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show')
+            blur.classList.toggle('bg-blur')
+     
         })
     }
 }
@@ -18,7 +21,9 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
+    const blur = document.querySelector(".overlay_bg")
     navMenu.classList.remove('show')
+    blur.classList.remove('bg-blur')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 

@@ -37,7 +37,7 @@
 
     text-align: center;
 
-    z-index: 0;
+    z-index: 10;
 
 
 
@@ -328,6 +328,16 @@ img {
 
 }
 
+.bg-blur   {
+   
+    backdrop-filter: blur(10px);
+    z-index: 98 !important;
+  
+
+}
+
+
+
 .bd-grid3 {
     max-width: 1024px !important;
     display: grid;
@@ -339,14 +349,15 @@ img {
 
 .dobrodosliLogo{
     position: absolute;
-    top: 50%;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
       animation: 1.1s fadeOut;
     animation-fill-mode: forwards;
-
+    
     visibility: visible;
+    
     
     
     
@@ -526,12 +537,12 @@ header {
 
     }
 
-    .nav__menu {
+    /* .nav__menu {
         position: fixed;
         top: 550%;
         right: 100%;
         width: 90%;
-        height: 30rem;
+        height: 25rem;
         padding: 3rem;
         background-color: rgba(255, 255, 255, 0.856);
         border-radius: 10px;
@@ -540,6 +551,35 @@ header {
 
 
 
+
+    } */
+
+img{
+    backdrop-filter: blur(2px);
+}
+
+    .nav__menu {
+        position: fixed;
+        top: 48vh;
+        left: 100%;
+        width: 70%;
+        /* max-height: 20rem; */
+        padding: 3rem;
+        background-color: rgba(255, 255, 255, 0.856);
+        border-radius: 10px;
+        transition: .6s;
+        backdrop-filter: blur(20px);
+
+        /* visibility: hidden; */
+
+
+
+
+    }
+
+    .nav__list {
+        justify-self: center;
+        
 
     }
 
@@ -602,7 +642,7 @@ header {
 
 
 .show {
-    right: 0;
+    left: 7%;
 
 
 }
@@ -907,7 +947,10 @@ header {
 .footer__link:hover {
     color: white !important;
 }
-
+body{
+    position: relative;
+    height: 100%;
+}
 .overlay {
     position: absolute;
     width: 100%;
@@ -917,6 +960,20 @@ header {
     left: 0px;
     background-color: rgba(0, 0, 0, 0.214);
 }
+
+.overlay_bg {
+    
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    bottom: 0px;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -9999;
+
+}
+
 
 .footer__social {
     font-size: 1.4rem;

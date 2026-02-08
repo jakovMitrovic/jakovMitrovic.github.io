@@ -50,8 +50,8 @@ const sr = ScrollReveal({
 sr.reveal('.home__title', { origin: 'bottom', delay:400 })
 
 
-sr.reveal('.l-header', { origin: 'top' })
-sr.reveal('.logo', { origin: 'top', delay:300 })
+sr.reveal('.l-header', { origin: 'top' , delay:600 })
+sr.reveal('.logo', { origin: 'left', delay:600, distance: '100px', })
 
 
 
@@ -67,68 +67,70 @@ sr.reveal('.about__social-icon', { delay: 600, interval: 200 })
 
 sr.reveal('.kategorija', { delay: 50, interval:50 })
 
+sr.reveal('.slogan', { origin: 'bottom', delay:100, distance:'100px'})
+
 
 //// Carousel Desktop
 
 
-const trackDesktop = document.getElementById('carousel__track__desktop');
-const slidesDesktop = Array.from(trackDesktop.children);
-const slideWidthDesktop = slidesDesktop[0].getBoundingClientRect().width;
+// const trackDesktop = document.getElementById('carousel__track__desktop');
+// const slidesDesktop = Array.from(trackDesktop.children);
+// const slideWidthDesktop = slidesDesktop[0].getBoundingClientRect().width;
 
-const trackMobile = document.getElementById('carousel__track__mobile');
-const slidesMobile = Array.from(trackMobile.children);
-const slideWidthMobile = slidesMobile[0].getBoundingClientRect().width;
+// const trackMobile = document.getElementById('carousel__track__mobile');
+// const slidesMobile = Array.from(trackMobile.children);
+// const slideWidthMobile = slidesMobile[0].getBoundingClientRect().width;
 
 
 
-slidesDesktop.forEach((slide, index) => {
-    slide.style.left = slideWidthDesktop * index + 'px'
-})
+// slidesDesktop.forEach((slide, index) => {
+//     slide.style.left = slideWidthDesktop * index + 'px'
+// })
 
-slidesMobile.forEach((slide, index) => {
-    slide.style.left = slideWidthMobile * index + 'px'
-})
+// slidesMobile.forEach((slide, index) => {
+//     slide.style.left = slideWidthMobile * index + 'px'
+// })
 
-const autoplayInterval = setInterval(function () {
-    const currentSlideDesktop = trackDesktop.querySelector('.current-slide-desktop')
-    const nextSlideDesktop = currentSlideDesktop.nextElementSibling;
+// const autoplayInterval = setInterval(function () {
+//     const currentSlideDesktop = trackDesktop.querySelector('.current-slide-desktop')
+//     const nextSlideDesktop = currentSlideDesktop.nextElementSibling;
     
-    const currentSlideMobile = trackMobile.querySelector('.current-slide-mobile')
-    const nextSlideMobile = currentSlideMobile.nextElementSibling;
+//     const currentSlideMobile = trackMobile.querySelector('.current-slide-mobile')
+//     const nextSlideMobile = currentSlideMobile.nextElementSibling;
     
     
-    moveToSlide(slidesDesktop, trackDesktop, currentSlideDesktop, nextSlideDesktop, 'desktop')
-    moveToSlide(slidesMobile, trackMobile, currentSlideMobile, nextSlideMobile, 'mobile')
-}, 5000);
+//     moveToSlide(slidesDesktop, trackDesktop, currentSlideDesktop, nextSlideDesktop, 'desktop')
+//     moveToSlide(slidesMobile, trackMobile, currentSlideMobile, nextSlideMobile, 'mobile')
+// }, 5000);
 
 
 
-const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
-    if (screen === "desktop") {
-        if (slides[slides.length - 1] == currentSlide) {
-            track.style.transform = 'translateX(' + 0 + ')'
-            currentSlide.classList.remove('current-slide-desktop')
-            slides[0].classList.add('current-slide-desktop')
-            return
-        }
+// const moveToSlide = (slides, track, currentSlide, targetSlide, screen) => {
+//     if (screen === "desktop") {
+//         if (slides[slides.length - 1] == currentSlide) {
+//             track.style.transform = 'translateX(' + 0 + ')'
+//             currentSlide.classList.remove('current-slide-desktop')
+//             slides[0].classList.add('current-slide-desktop')
+//             return
+//         }
 
-        track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
-        currentSlide.classList.remove('current-slide-desktop')
-        targetSlide.classList.add('current-slide-desktop')
-    }
-    if (screen === "mobile") {
-        if (slides[slides.length - 1] == currentSlide) {
-            track.style.transform = 'translateX(' + 0 + ')'
-            currentSlide.classList.remove('current-slide-mobile')
-            slides[0].classList.add('current-slide-mobile')
-            return
-        }
+//         track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
+//         currentSlide.classList.remove('current-slide-desktop')
+//         targetSlide.classList.add('current-slide-desktop')
+//     }
+//     if (screen === "mobile") {
+//         if (slides[slides.length - 1] == currentSlide) {
+//             track.style.transform = 'translateX(' + 0 + ')'
+//             currentSlide.classList.remove('current-slide-mobile')
+//             slides[0].classList.add('current-slide-mobile')
+//             return
+//         }
         
-        track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
-        currentSlide.classList.remove('current-slide-mobile')
-        targetSlide.classList.add('current-slide-mobile')
-    }
+//         track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
+//         currentSlide.classList.remove('current-slide-mobile')
+//         targetSlide.classList.add('current-slide-mobile')
+//     }
     
-}
+// }
 
 

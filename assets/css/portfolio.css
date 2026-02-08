@@ -12,8 +12,9 @@
 
     /* --first-color: #f6f6f6f8; */
 
-    --first-color: #f1f3f4c7;
-
+    --first-color: #fffffff5;
+    --title-font: 'Cinzel', serif;
+    --body-font: 'Montserrat', sans-serif;
     --white-color: #252424;
     --background-color: #ffffffc9;
     --dark-color: #313131;
@@ -21,53 +22,74 @@
     --text-color-light: #ffffffc9;
 }
 
-body{
+body {
     animation: 0.5s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
 }
 
-.ponuda{
+.ponuda {
 
-    border-radius: 20px;
     max-width: 30rem;
     max-height: 50rem;
     text-align: start;
-    padding: 5rem;
+    padding: 3rem;
     padding-top: 3rem;
 
     font-display: flex;
     /* background-color: var(--first-color); */
     background-color: rgb(255, 255, 255);
+    border: 2px solid #eee;
+    cursor: default;
 
-    box-shadow: 20px 20px 60px #dfdfdf,
-        -20px -20px 60px #ffffff;
-
-
-        cursor:default;
-
-   
-  
 }
-.ponuda p{
+
+.ponuda:hover {
+    border-color: #000;
+}
+
+.ponuda p {
     margin-bottom: 0.3rem;
-}
-.ponuda h1{
-    margin-bottom: 2rem;
-    background-color:var(--first-color);
-    border-radius: 1rem;
+    display: list-item;
+    list-style-type: disc;
+    /* Options: disc (default), circle, square, none */
+    margin-left: 1em;
+    /* Add some margin for the bullet to be visible */
+
+
+
+
 }
 
-.ponuda h1,h2{
+.ponuda h1 {
+    margin: auto;
+    font-size: 1.5rem;
+    background: #000;
+    color: #fff;
+    /* display: inline-block;  */
+    padding: 5px 20px;
+    margin-bottom: 2rem;
+    width: 40%;
+
+
+}
+
+.ponuda h1,
+h2 {
     text-align: center;
 }
 
-.ponuda:hover > .cena{
+.ponuda h2 {
+    margin-bottom: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+/* .ponuda:hover > .cena{
     color: #000000;
     font-size: 3rem;
     margin-top: 1rem;
     transition: 400ms ease all;
-}
+} */
 :root {
     --body-font: 'Montserrat', sans-serif;
 
@@ -85,16 +107,22 @@ body{
         --small-font-size: .875rem;
     }
 
+    #about{
+        margin-top: 10em;
+        margin-bottom: 5em;
+    }
+
 }
 
 @media screen and (max-width: 1199px) {
     .kategorije {
-        
-        margin:auto;
+
+        margin: auto;
         width: 95%;
 
     }
-    .ponuda{
+
+    .ponuda {
         margin: 4rem auto;
         padding: 2.5rem 1rem;
     }
@@ -106,39 +134,40 @@ body{
     .kategorije {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        
+
 
 
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-   
+
         margin-bottom: 5em;
 
     }
 
-    .ponuda{
+    .ponuda {
         margin: 1rem;
     }
 
 }
+
 @media screen and (min-width: 1600px) {
     .kategorije {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        
+
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-    
+
         margin-bottom: 5em;
 
 
         display: flex;
         justify-content: center;
-        
-        
+
+
 
     }
-    
+
 
 }
 
@@ -150,39 +179,40 @@ body{
 
     animation: 0.5s fadeIn;
     animation-fill-mode: forwards;
-    
+
     visibility: hidden;
 
 }
 
-.logo img{
-    max-width:5rem;
+.logo img {
+    max-width: 5rem;
     margin: 0;
 }
 
 .category__title h1 {
-    font-size: 50px;
+    font-size: 45px;
+
 }
 
 .category__title p {
-    font-family: "Playwrite IS", cursive;
+
     font-optical-sizing: auto;
     font-size: large;
-    font-weight: 600;
-    color: #535353cb !important;
+    font-weight: 300;
+    color: #667 !important;
     padding-left: 1em;
     padding-right: 1em;
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-align: start;
 }
 
 
 .kategorije {
     margin: auto;
-    margin-top: 4rem;
-    margin-bottom: 5em;
+    margin-bottom: 1em !important;
     width: 80%;
 }
 
@@ -199,13 +229,9 @@ body{
 }
 
 
-p {
-    font-family: 'Montserrat', sans-serif !important;
-}
 
-span {
-    font-family: 'Montserrat', sans-serif;
-}
+
+
 
 *,
 ::before,
@@ -221,8 +247,7 @@ html {
 body {
     margin: var(--header-height) 0 0 0;
     margin: var(--header-height) 0 0 0;
-    /* font-family: 'Bakbak One', sans-serif; */
-    font-family: "Playwrite IS", cursive;
+    font-family: var(--body-font);
     font-optical-sizing: auto;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
@@ -230,6 +255,13 @@ body {
     line-height: 1.6;
     background-color: var(--background-color) !important
 }
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font)
+}
+
 
 h1,
 h2,
@@ -296,7 +328,7 @@ img {
     padding-right: 5em;
     padding-left: 5em;
 
-    font-family: 'Montserrat', sans-serif;
+
 
     color: rgba(48, 48, 48, 0.64);
     font-size: 20px;
@@ -310,23 +342,21 @@ img {
 }
 
 .section-title {
-    position: relative;
-    font-size: var(--h2-font-size);
-    color: var(--white-color);
-    margin: var(--mb-4) 0;
     text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 1rem !important;
 }
 
 .section-title::after {
+    content: '';
     position: absolute;
-    content: "";
-    width: 32px;
-    height: .18rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 2rem;
-    background-color: var(--white-color);
+    width: 40px;
+    height: 1px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .bd-grid {
@@ -337,6 +367,15 @@ img {
     width: calc(100% - 2rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
+}
+
+#paketi {
+    scroll-margin-top: 100px;
+    margin-top: 3em !important;
+}
+
+#kola {
+    scroll-margin-top: 100px;
 }
 
 .bd-grid2 {
@@ -396,7 +435,7 @@ img {
     background-color: var(--first-color);
     animation: 0.5s fadeIn;
     animation-fill-mode: forwards;
-
+    border-bottom: 1px solid #f2f2f2;
     visibility: hidden;
 
 }
@@ -408,6 +447,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--title-font);
 }
 
 
@@ -423,13 +463,17 @@ img {
     }
 
 
-    .dobrodosliLogo{
+    .dobrodosliLogo {
         max-width: 40%;
     }
 
-    .logo img{
-        max-width:5rem;
+    .logo img {
+        max-width: 5rem;
 
+    }
+
+    .category__title {
+        margin-bottom: 1em !important;
     }
 
     .category__title h1 {
@@ -461,20 +505,23 @@ img {
         width: 70%;
         /* max-height: 20rem; */
         padding: 3rem;
-        background-color: rgba(255, 255, 255, 0.856);
-        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
         transition: .6s;
-        backdrop-filter: blur(20px);
-
-        /* visibility: hidden; */
-
+        backdrop-filter: blur(25px);
+        align-items: center;
 
 
 
     }
+
+    .nav__link{
+        font-size: large;
+        font-weight: 400;
+    }
+
     .nav__list {
         justify-self: center;
-        
+
 
     }
 
@@ -620,18 +667,21 @@ img {
 
 }
 
-.cenovnik{
-    font-weight:800 !important;
-    font-size: large;
-    font-family: "Playwrite IS", cursive;
-    color: #4a4a4a !important;
- 
-  
+.cenovnik {
+
+    font-family: var(--title-font);
+
+    display: inline-block;
+
+    font-weight: 600;
+
+
+
 
 }
 
 
-.dobrodosliLogo{
+.dobrodosliLogo {
     position: absolute;
     top: 37vh;
     left: 50%;
@@ -642,7 +692,7 @@ img {
     animation-fill-mode: forwards;
 
     visibility: visible;
-    
+
 }
 
 .home__title span {
@@ -671,7 +721,9 @@ img {
 
 
 #about {
+    
     background-color: var(--first-color);
+    padding-top: 0;
 }
 
 .about__container {
@@ -703,7 +755,7 @@ img {
     margin-bottom: var(--mb-1);
 
 
-    font-family: 'Montserrat', sans-serif;
+
 
     color: rgba(48, 48, 48, 0.64);
 
@@ -713,7 +765,7 @@ img {
 
 .noM {
     margin-bottom: 0.5em !important;
-    font-family: 'Montserrat', sans-serif;
+
     font-optical-sizing: auto;
 
     color: rgba(48, 48, 48, 0.64);
@@ -726,7 +778,7 @@ img {
     display: block;
     margin-bottom: var(--mb-4);
 
-    font-family: 'Montserrat', sans-serif;
+
     color: rgba(48, 48, 48, 0.64);
 
     font-weight: bold;
@@ -811,26 +863,26 @@ img {
     cursor: pointer;
 }
 
-.bg-blur   {
-   
+.bg-blur {
+
     backdrop-filter: blur(10px);
     z-index: 98 !important;
-  
+
 
 }
 
-body{
+body {
     position: relative;
     height: 100%;
 }
 
 .overlay_bg {
-    
+
     position: absolute;
     width: 100%;
     min-height: 100%;
     bottom: 0px;
-    top:0px;
+    top: 0px;
     left: 0px;
     bottom: 0px;
     z-index: -9999;
@@ -855,7 +907,7 @@ body{
 
 .footer__link {
     padding: .25rem 0;
-    font-family: 'Montserrat', sans-serif;
+
 
     color: var(--text-color-light) !important;
 }
@@ -905,7 +957,7 @@ body{
         display: flex;
         animation: 0.7s fadeIn;
         animation-fill-mode: forwards;
-    
+
         visibility: hidden;
     }
 
@@ -984,8 +1036,8 @@ body{
         margin-right: auto;
     }
 
-    .item:hover {
-        scale: 0.95;
+    .item img:hover {
+        filter: grayscale(0);
     }
 }
 
@@ -1018,6 +1070,8 @@ body{
 
 }
 
+
+
 @keyframes fadeIn {
     99% {
         visibility: hidden;
@@ -1045,22 +1099,25 @@ body{
 .item {
     display: inline-block;
     padding: 0;
-    margin: 0 0 1.5em;
+    margin: 0 0 1em;
     width: 100%;
     -webkit-transition: 1s ease all;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
+
 }
 
 .item img {
-    border-radius: 5px;
 
+    height: 100%;
     max-width: 100%;
+    filter: grayscale(0.09);
+
 }
 
-@media only screen and (min-width: 200px) and (max-width: 499px) {
+/* @media only screen and (min-width: 200px) and (max-width: 499px) {
     .masonry {
         -moz-column-count: 1;
         -webkit-column-count: 1;
@@ -1068,15 +1125,16 @@ body{
         margin-left: 2em;
         margin-right: 2em;
     }
-}
+} */
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-        margin-left: 2em;
-        margin-right: 2em;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: -10px !important;
     }
 }
 
@@ -1087,6 +1145,8 @@ body{
         column-count: 2;
         margin-left: 2em;
         margin-right: 2em;
+        max-width: 60%;
+        margin: auto;
     }
 }
 
@@ -1095,6 +1155,8 @@ body{
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
+        max-width: 60%;
+        margin: auto;
     }
 
 
@@ -1102,11 +1164,295 @@ body{
 
 .category__title {
     text-align: center;
-    margin-top: 7em;
+    margin-top: 4em;
+    margin-bottom: 7em;
 
     animation: 0.5s fadeIn;
     animation-fill-mode: forwards;
-    
+
     visibility: hidden;
 }
 
+
+/* --- ABOUT PREMIUM SECTION --- */
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    /* Na mobilnom: slika iznad teksta */
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Naslov unutar sekcije */
+.section-title-left {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.title-underline {
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 2rem;
+}
+
+/* Tekstualni podaci */
+.about__data {
+    text-align: center;
+    flex: 1;
+}
+
+.about__greeting {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.about__name {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.about__profession {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.about__description {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+/* Socijalne ikonice */
+.about__social-minimal {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.about__social-minimal a:hover {
+    color: #888;
+}
+
+/* Slikovni deo */
+.about__image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about__image-border {
+    padding: 15px;
+    border: 1px solid #eee;
+    /* Suptilni okvir oko slike */
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+}
+
+.about__image-border img {
+    width: 100%;
+    display: block;
+    filter: grayscale(20%);
+    /* Blagi umetnički dodir */
+}
+
+.about__vertical-line {
+    display: none;
+    /* Sakriveno na mobilnom */
+}
+
+/* --- DESKTOP ADAPTACIJA (Ekran > 768px) --- */
+@media screen and (min-width: 768px) {
+    .about__wrapper {
+        flex-direction: row-reverse;
+        /* Tekst levo, slika desno */
+        align-items: center;
+        text-align: left;
+        gap: 0;
+    }
+
+    .about__data {
+        text-align: left;
+        padding-right: 4rem;
+    }
+
+    .about__description {
+        margin-left: 0;
+    }
+
+    .about__social-minimal {
+        justify-content: flex-start;
+    }
+
+    /* Vertikalna linija */
+    .about__vertical-line {
+        display: block;
+        width: 1px;
+        height: 350px;
+        background-color: #eee;
+        margin: 0 4rem;
+    }
+
+    .about__header {
+        display: block;
+    }
+
+    .about__image-box {
+        justify-content: flex-end;
+    }
+}
+
+
+/* --- VODORAVNI KONTAKT --- */
+.contact__container-horizontal {
+    display: flex;
+    justify-content: center;
+    /* Centriranje na sredini */
+    align-items: flex-start;
+    gap: 5rem;
+    /* Razmak između stavki */
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.contact__item {
+    flex: 1;
+    /* Svaka stavka zauzima jednako mesta */
+}
+
+.contact__subtitle {
+    font-family: var(--body-font);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 0.75rem;
+}
+
+.contact__text {
+    font-family: var(--title-font);
+    /* Cinzel za elegantniji izgled vrednosti */
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.contact__text a {
+    transition: 0.3s ease;
+}
+
+.contact__text a:hover {
+    opacity: 0.6;
+}
+
+/* --- PRILAGOĐAVANJE ZA MOBILNI --- */
+@media screen and (max-width: 768px) {
+    .contact__container-horizontal {
+        flex-direction: column;
+        /* Na mobilnom se vraća u vertikalno */
+        gap: 1rem;
+        margin: 3.5rem auto;
+        align-items: center;
+        line-height: 0.7;
+    }
+}
+
+
+
+.span-img {
+    margin-top: -20px;
+    margin-bottom: 50px;
+    background-image: url('../img/spanwed.webp');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    align-content: center;
+    text-align: right;
+    object-fit: cover !important;
+
+    box-shadow: inset -3px 19px 47px 26px rgba(255, 253, 253, 0.1);
+
+}
+
+    .span-img-rodj {
+            background-image: url('../img/spanrodj.webp') !important;
+            height: 500px;
+    }
+
+        .span-img-krst {
+            background-image: url('../img/spankrst.webp') !important;
+            
+    }
+
+
+.span-img h2 {
+    color: rgb(255, 255, 255);
+    margin-right: 3em;
+    font-family: var(--title-font);
+    margin-top: 4em;
+    font-weight: 400;
+    font-size: 1.7em;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .span-img {
+        height: 400px;
+        margin-top: -20px;
+        background-image: url('../img/spanwedportrait.webp');
+        text-align: center;
+
+        -moz-box-shadow: inset 0 -100px 70px -50px #0000009c;
+        -webkit-box-shadow: inset 0 -100px 70px -50px #00000080;
+        box-shadow: inset 0 -100px 70px -50px #00000083;
+
+
+        margin-bottom: 1em;
+
+
+    }
+
+    .span-img-rodj{
+        margin-top: -10px;
+        height: 450px;
+        background-image: url('../img/spanrodjportrait.webp') !important;
+    }
+
+
+    .span-img-krst{
+        margin-top: -10px;
+        height: 450px;
+        background-image: url('../img/spankrstportrait.webp') !important;
+    }
+
+
+    .span-img h2 {
+        font-size: 2em;
+        font-weight: 400;
+        margin: auto;
+        margin-top: 10em;
+        color: #fff;
+    }
+}

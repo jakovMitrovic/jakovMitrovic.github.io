@@ -19,6 +19,8 @@ showMenu('nav-toggle', 'nav-menu')
 /*===== REMOVE MENU MOBILE =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
+
+
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     const blur = document.querySelector(".overlay_bg")
@@ -38,9 +40,15 @@ const sr = ScrollReveal({
 
 
 sr.reveal('.l-header', { origin: 'top' })
-sr.reveal('.logo', { origin: 'top', delay:200 })
-
+sr.reveal('.logo', { origin: 'left', delay:200 })
 
 sr.reveal('.category__title', { origin: 'top', delay:500})
+sr.reveal('.slogan', { origin: 'bottom', delay:1200, distance:'100px'})
 sr.reveal('.masonry', { origin: 'bottom', delay:1200 })
+
+
+sr.reveal('.about__image-box', { origin: 'bottom', delay:100 })
+sr.reveal('.about__wrapper', { origin: 'bottom', delay:100 })
+
+
 

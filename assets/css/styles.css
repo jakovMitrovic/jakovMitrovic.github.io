@@ -56,6 +56,7 @@ html {
 }
 
 
+
 .slova{
     margin: 0;
     position: absolute;
@@ -955,6 +956,21 @@ img{
 
         
     }
+
+     .top-seo {
+        font-family: var(--title-font);
+        color: #ffffff !important;
+        font-size: 1rem;
+        line-height: 0.5;
+        padding-top: 3rem;
+        font-weight: 100 !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+
+        
+    }
     
    
 
@@ -1312,7 +1328,7 @@ body{
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     body {
         margin: 0;
     }
@@ -1578,3 +1594,57 @@ body{
     }
 }
         
+.footer-seo{
+    font-size: 1rem;
+  font-family: var(--body-font);
+  letter-spacing: 5px;
+  margin-top: 2em;
+    font-weight: 200;
+  margin-bottom: 0em;
+  margin-top: 5em;    
+  text-align: center;
+}
+
+
+.topTop{
+
+    text-align: center;
+    font-weight: 100;
+    position: fixed;
+    top: -10vh;
+    left: 50%;
+    transform: translate(-50%);
+    /* padding-top: env(safe-area-inset-top); */
+    font-size: medium;
+    letter-spacing: 5px;
+    height: fit-content;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    color: white;
+
+    
+ 
+    
+}
+
+@media screen and (max-width: 768px){
+    .topTop{
+        top: 10vh;
+        width: 80%;
+        left: 50% !important;
+        transform: translate(-50%) !important;
+  
+    }
+}
+@media screen and (min-width: 1900px){
+    .topTop{
+        top: -14vh;
+        }
+        }
+        
+        /* 
+@media screen and (min-width: 1600px){
+    .topTop{
+        top: -15vh;
+    }
+} */

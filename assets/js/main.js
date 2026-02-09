@@ -48,6 +48,7 @@ const sr = ScrollReveal({
 
 
 sr.reveal('.home__title', { origin: 'bottom', delay:400 })
+sr.reveal('.topTop', { origin: 'bottom', delay:400 })
 
 
 sr.reveal('.l-header', { origin: 'top' , delay:600 })
@@ -59,11 +60,11 @@ sr.reveal('.logo', { origin: 'left', delay:600, distance: '100px', })
 
 
 /*SCROLL ABOUT*/
-sr.reveal('.about__img', { delay: 500 })
-sr.reveal('.about__subtitle', { delay: 300 })
-sr.reveal('.about__profession', { delay: 400 })
-sr.reveal('.about__text', { delay: 500 })
-sr.reveal('.about__social-icon', { delay: 600, interval: 200 })
+// sr.reveal('.about__img', { delay: 500 })
+// sr.reveal('.about__subtitle', { delay: 300 })
+// sr.reveal('.about__profession', { delay: 400 })
+// sr.reveal('.about__text', { delay: 500 })
+// sr.reveal('.about__social-icon', { delay: 600, interval: 200 })
 
 sr.reveal('.kategorija', { delay: 50, interval:50 })
 

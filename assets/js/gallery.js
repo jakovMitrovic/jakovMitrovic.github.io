@@ -43,8 +43,7 @@ sr.reveal('.l-header', { origin: 'top' })
 sr.reveal('.logo', { origin: 'left', delay:200 })
 
 sr.reveal('.category__title', { origin: 'top', delay:500})
-sr.reveal('.slogan', { origin: 'bottom', delay:1200, distance:'100px'})
-sr.reveal('.masonry', { origin: 'bottom', delay:1200 })
+sr.reveal('.masonry', { origin: 'bottom', delay:500 })
 
 
 sr.reveal('.about__image-box', { origin: 'bottom', delay:100 })

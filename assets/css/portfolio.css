@@ -1112,7 +1112,9 @@ body {
 
 .item img {
 
-    height: fit-content !important;
+    height: 100%;
+    width: 100%;
+    object-fit: cover !important;
 
     max-width: 100%;
     filter: grayscale(0.09);

@@ -475,6 +475,7 @@ img {
 
     .category__title {
         margin-bottom: 1em !important;
+        font-size: 0.6em;
     }
 
     .category__title h1 {
@@ -507,7 +508,7 @@ img {
         /* max-height: 20rem; */
         padding: 3rem;
         background-color: rgb(255, 255, 255);
-        transition: .6s;
+        transition: 0.1s;
         backdrop-filter: blur(25px);
         align-items: center;
 

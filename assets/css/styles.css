@@ -82,6 +82,67 @@ html {
 }
 
 
+@media screen and (min-width: 2500px){
+    .nav__item a{
+        font-size: xx-large !important;
+    }
+    .home__title{
+        font-size: 5em !important;
+    }
+    .span-img{
+        height: 700px !important;
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (min-width: 3500px){
+    .nav__item a{
+        font-size: 2.5em !important;
+    }
+    .home__title{
+        font-size: 6em !important;
+    }
+
+    .span-img{
+        height: 1000px !important;
+        margin-top: 50px !important;
+    }
+
+    .bd-grid {
+    max-width: 2024px !important;
+ 
+}
+.contact__container-horizontal h3{
+    font-size: 1.3em !important;
+}
+
+.contact__text{
+    font-size: 1.8em !important;
+}
+
+.footer__container h2{ 
+    font-size: 2em !important;
+}
+.footer__container a{ 
+    font-size: 1.5em !important;
+}
+
+.footer__container p{ 
+    font-size: 1.5em !important;
+}
+.footer h1{
+    font-size: 1.4em;
+}
+.bx{
+    font-size: 1.5em !important;
+}
+
+
+}
+
+
+
+
 @media screen and (max-width: 768px) {
 
     .span-img{
@@ -764,7 +825,7 @@ img{
         /* max-height: 20rem; */
         padding: 3rem;
         background-color: rgb(255, 255, 255);
-        transition: .6s;
+        transition: 0.1s;
         backdrop-filter: blur(25px);
         align-items: center;
 

@@ -576,7 +576,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-      animation: 1.1s fadeOut;
+    animation: 1s fadeOut;
     animation-fill-mode: forwards;
     
     visibility: visible;
@@ -710,6 +710,7 @@ img {
     
 
     .dobrodosliLogo{
+        animation: 0.3s fadeOut !important;
         max-width: 40%;
     }
 
